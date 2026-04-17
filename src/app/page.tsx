@@ -66,7 +66,7 @@ export default function HomePage() {
                 "@type": "WebPage",
                 "@id": "https://iptv-premium-uk.tv/#webpage",
                 url: "https://iptv-premium-uk.tv",
-                name: "Buy IPTV UK | 37,000 Channels in 4K From £12.99",
+                name: "Buy IPTV UK | 37,000 Channels in 4K From £25.99",
                 inLanguage: "en-GB",
                 isPartOf: {
                   "@id": "https://iptv-premium-uk.tv/#website",
