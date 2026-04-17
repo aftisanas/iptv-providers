@@ -88,12 +88,12 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.08] mb-7"
           >
-            <span className="text-white">Premium IPTV Subscription</span>
+            <span className="text-white">Buy IPTV UK — Instant Access</span>
             <br />
-            <span className="text-white">for the UK — </span>
-            <span className="gradient-text-hero">Watch Everything,</span>
+            <span className="text-white">To </span>
+            <span className="gradient-text-hero">37,000 Channels</span>
             <br className="hidden sm:block" />
-            <span className="gradient-text-hero"> Pay Less</span>
+            <span className="gradient-text-hero"> In 4K</span>
           </motion.h1>
 
           {/* Subheadline */}
@@ -103,10 +103,9 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="mx-auto max-w-2xl text-lg sm:text-xl text-gray-300/90 leading-relaxed mb-10"
           >
-            Enjoy <strong className="text-white font-semibold">37,000+</strong> live channels — including
-            every major British broadcaster and premium sports network — plus{" "}
-            <strong className="text-white font-semibold">198,000+ films and series</strong> on demand.
-            One account, every device, instant activation.
+            When you buy IPTV from us, your login lands in under 60 seconds. No waiting, no contracts, no dish on the wall.
+            Get full <strong className="text-white font-semibold">4K UHD</strong> streaming across five screens, a built-in VPN and{" "}
+            <strong className="text-white font-semibold">50,000+</strong> fellow UK viewers who never look back at a satellite box.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -121,7 +120,7 @@ export default function HeroSection() {
               className="group relative flex items-center gap-2.5 rounded-2xl bg-gradient-to-r from-violet-600 via-purple-600 to-cyan-500 px-8 py-4 text-base font-semibold text-white transition-all hover:shadow-2xl hover:shadow-purple-500/30 active:scale-[0.98] w-full sm:w-auto justify-center"
             >
               <Play className="h-5 w-5 fill-current" />
-              <span>View Our Subscription Plans</span>
+              <span>Buy IPTV Now — From £12.99</span>
               <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               <div className="absolute inset-0 rounded-2xl bg-white/10 opacity-0 transition-opacity group-hover:opacity-100" />
             </Link>
@@ -132,7 +131,7 @@ export default function HeroSection() {
               className="group flex items-center gap-2.5 rounded-2xl border border-white/15 bg-white/[0.06] backdrop-blur-sm px-8 py-4 text-base font-semibold text-white transition-all hover:border-purple-400/30 hover:bg-white/10 w-full sm:w-auto justify-center"
             >
               <MessageCircle className="h-5 w-5 text-cyan-400" />
-              <span>Contact Us on WhatsApp</span>
+              <span>See All Plans</span>
             </a>
           </motion.div>
 
@@ -144,10 +143,10 @@ export default function HeroSection() {
             className="flex flex-wrap items-center justify-center gap-3 sm:gap-4"
           >
             {[
-              { icon: Zap, text: "IPTV Stable", sub: "99.9% Uptime" },
-              { icon: Tv, text: "HD & 4K Quality", sub: "Ultra HD Streaming" },
-              { icon: Shield, text: "30-Day Guarantee", sub: "Money-Back Promise" },
-              { icon: Clock, text: "24/7 UK Support", sub: "Real-Time Assistance" },
+              { icon: Shield, text: "30-Day Money-Back", sub: "No Questions Asked" },
+              { icon: Zap, text: "No Lock-In Contract", sub: "Cancel Anytime" },
+              { icon: Tv, text: "Secure UK Checkout", sub: "Stripe & PayPal" },
+              { icon: Clock, text: "Instant Activation", sub: "Live in 60 Seconds" },
             ].map((badge, i) => (
               <motion.div
                 key={badge.text}
@@ -174,3 +173,4 @@ export default function HeroSection() {
     </section>
   );
 }
+

@@ -112,11 +112,11 @@ export default function PricingSection() {
             Flexible Plans for Every Budget
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-5">
-            Our Premium IPTV{" "}
-            <span className="gradient-text">Subscription Plans</span>
+            Buy IPTV UK —{" "}
+            <span className="gradient-text">Honest Pricing, No Hidden Fees</span>
           </h2>
           <p className="mx-auto max-w-2xl text-base text-muted leading-relaxed">
-            Every plan includes 4K UHD streams, built-in VPN, anti-freeze technology, full VOD access, all sports channels, 24/7 UK support, and a 30-day money-back guarantee. No hidden fees. No contracts. Cancel any time.
+            Pick the plan that fits your budget. Every plan covers the same full service — the longer you commit, the lower the monthly rate drops.
           </p>
         </motion.div>
 
@@ -162,8 +162,8 @@ export default function PricingSection() {
                   </>
                 )}
 
-                {/* Best Value badge */}
-                {plan.badge === "BEST VALUE" && !isPopular && (
+                {/* Non-popular badge */}
+                {plan.badge && !isPopular && (
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-20">
                     <div className="badge-shimmer rounded-full bg-gradient-to-r from-fuchsia-600 to-purple-600 px-5 py-2 text-xs font-bold tracking-wider text-white shadow-lg shadow-fuchsia-500/20 whitespace-nowrap flex items-center gap-1.5">
                       <Gem className="h-3 w-3" />
@@ -243,7 +243,7 @@ export default function PricingSection() {
                       meta.button
                     )}
                   >
-                    Subscribe Now
+                    Buy Now
                   </a>
                 </div>
               </motion.div>
@@ -259,9 +259,9 @@ export default function PricingSection() {
           className="mt-14 flex flex-wrap items-center justify-center gap-6 lg:gap-10"
         >
           {[
-            { icon: Shield, label: "30-Day Money Back" },
-            { icon: CreditCard, label: "Secure Payment" },
-            { icon: Star, label: "4.9/5 Customer Rating" },
+            { icon: Shield, label: "SSL-secured Stripe & PayPal checkout" },
+            { icon: CreditCard, label: "30-day money-back guarantee" },
+            { icon: Star, label: "Instant delivery" },
           ].map((item) => (
             <div key={item.label} className="flex items-center gap-2 text-sm text-muted">
               <item.icon className="h-4 w-4 text-violet-500/60" />

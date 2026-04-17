@@ -22,12 +22,12 @@ export default function DevicesSection() {
             Multi-Device Access
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Fast IPTV Service — Works on{" "}
-            <span className="gradient-text">All Your Devices</span>
+            Buy IPTV And Watch On{" "}
+            <span className="gradient-text">Every Screen You Own</span>
           </h2>
           <p className="mx-auto max-w-xl text-lg text-muted">
-            Watch on your Firestick, Smart TV, phone, tablet, or computer. Your subscription
-            works across multiple devices simultaneously.
+            One purchase, one login, five screens. Our IPTV service runs on every device
+            in the house with no extra hardware to buy.
           </p>
         </motion.div>
 

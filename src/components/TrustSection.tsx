@@ -6,23 +6,23 @@ import { Shield, Wifi, Lock, ServerCog } from "lucide-react";
 const trustItems = [
   {
     icon: Shield,
-    title: "IPTV 30-Day Money Back",
-    description: "Full refund within 30 days if you're not completely satisfied with your IPTV subscription. No questions asked, no hoops, no delays.",
+    title: "30-Day Full Refund — No Questions",
+    description: "Contact us within 30 days of purchase and we return every penny. No form to fill, no long wait, no excuses.",
   },
   {
     icon: Wifi,
-    title: "Strong IPTV 99.9% Uptime",
-    description: "UK-optimised IPTV server infrastructure ensures your entertainment never stops streaming, even during peak hours. Strong IPTV you can rely on.",
+    title: "99.9% Uptime On Every Channel",
+    description: "Our monitoring system watches each server every 30 seconds. If a node drops, your stream reroutes before you notice a flicker.",
   },
   {
     icon: Lock,
-    title: "Secure & Private IPTV Service",
-    description: "Encrypted connections and VPN-friendly IPTV service to protect your viewing privacy at all times.",
+    title: "Private Checkout With Built-In VPN",
+    description: "TLS 1.3 protects your checkout and our built-in VPN protects your streams. Your IP and viewing history stay off the record from the first play.",
   },
   {
     icon: ServerCog,
-    title: "Instant IPTV Activation",
-    description: "Your IPTV subscription is activated within minutes of purchase. No waiting, no manual setup — buy IPTV and start watching immediately.",
+    title: "Instant Delivery, No Manual Delays",
+    description: "Automation sends your login the moment your payment settles. There is no human in the loop and no working-hours delay.",
   },
 ];
 
@@ -42,11 +42,11 @@ export default function TrustSection() {
             Trust & Guarantee
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Strong British IPTV — Your Satisfaction,{" "}
-            <span className="gradient-text">Guaranteed</span>
+            Buy IPTV With Complete{" "}
+            <span className="gradient-text">Buyer Confidence</span>
           </h2>
           <p className="mx-auto max-w-xl text-lg text-muted">
-            We stand behind our service with a no-questions-asked guarantee and dedicated UK support.
+            We back every order with four hard guarantees. If any one of them fails, your money comes back the same day.
           </p>
         </motion.div>
 

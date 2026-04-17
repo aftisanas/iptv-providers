@@ -25,22 +25,22 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "IPTV UK — Premium IPTV Subscription | Premium IPTV 2026",
+    default: "Buy IPTV UK | 37,000 Channels in 4K From £12.99",
     template: "%s | Premium IPTV",
   },
   description:
-    "Premium IPTV UK subscription with 37,000+ channels in HD & 4K. British TV, live sports, movies & VOD. Instant activation, 30-day guarantee. Subscribe now.",
+    "Buy IPTV in the UK and get 37,000 channels, 4K UHD, built-in VPN and instant setup. From £25.99 with a 30-day money-back guarantee. Activate in 60 seconds.",
   keywords: [
+    "buy IPTV UK",
+    "buy IPTV",
     "IPTV UK",
-    "iptv subscription",
-    "premium IPTV",
-    "IPTV service",
-    "british IPTV",
-    "IPTV providers",
+    "IPTV subscription",
     "best IPTV UK",
-    "UK IPTV subscription",
-    "IPTV UK 2026",
-    "live TV streaming UK",
+    "cheap IPTV UK",
+    "IPTV providers",
+    "UK IPTV providers",
+    "IPTV 4K UK",
+    "IPTV Firestick UK",
   ],
   authors: [{ name: "Premium IPTV" }],
   creator: "Premium IPTV",
@@ -48,15 +48,15 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_GB",
     siteName: "Premium IPTV",
-    title: "IPTV UK — Premium IPTV Subscription | Premium IPTV 2026",
+    title: "Buy IPTV UK — 37,000 Channels, 4K UHD, From £12.99",
     description:
-      "Premium IPTV UK subscription with 37,000+ channels in HD & 4K. British TV, live sports, movies & VOD. Instant activation, 30-day guarantee.",
+      "Ready to buy IPTV in the UK? Get 37,000 live channels, 198,000 on-demand titles, five screens and 24/7 UK support. Activate the moment you pay.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "IPTV UK — Premium IPTV Subscription | Premium IPTV",
+    title: "Buy IPTV UK — 37,000 Channels, 4K UHD, From £12.99",
     description:
-      "37,000+ live channels. HD & 4K quality. No buffering. 30-day guarantee.",
+      "Buy IPTV in the UK and get 37,000 channels, 4K UHD, built-in VPN and instant setup. From £25.99 with a 30-day money-back guarantee.",
   },
   robots: {
     index: true,

@@ -22,12 +22,12 @@ export default function ChannelsSection() {
             UK Channels That Matter
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            37,000+ IPTV UK Channels &{" "}
-            <span className="gradient-text">198,000+ On Demand</span>
+            Buy IPTV UK And Unlock{" "}
+            <span className="gradient-text">37,000 Channels In Six Categories</span>
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-muted">
-            We carry the channels British viewers actually watch. Comprehensive coverage
-            of BBC, ITV, Channel 4, Sky, TNT Sports, and thousands more.
+            Pick your plan and every category below opens at once. No add-ons, no bolt-ons,
+            no hidden fees.
           </p>
         </motion.div>
 

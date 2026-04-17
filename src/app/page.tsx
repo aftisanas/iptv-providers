@@ -66,7 +66,7 @@ export default function HomePage() {
                 "@type": "WebPage",
                 "@id": "https://iptv-premium-uk.tv/#webpage",
                 url: "https://iptv-premium-uk.tv",
-                name: "IPTV UK — Premium IPTV Subscription | Premium IPTV 2026",
+                name: "Buy IPTV UK | 37,000 Channels in 4K From £12.99",
                 inLanguage: "en-GB",
                 isPartOf: {
                   "@id": "https://iptv-premium-uk.tv/#website",
@@ -75,7 +75,7 @@ export default function HomePage() {
                   "@id": "https://iptv-premium-uk.tv/#organization",
                 },
                 description:
-                  "Premium IPTV UK subscription with 37,000+ channels in HD & 4K. British TV, live sports, movies & VOD.",
+                  "Buy IPTV in the UK and get 37,000 channels, 4K UHD, built-in VPN and instant setup. From £25.99 with a 30-day money-back guarantee.",
               },
             ],
           }),
@@ -143,34 +143,34 @@ export default function HomePage() {
             mainEntity: [
               {
                 "@type": "Question",
-                name: "What is IPTV and how does it differ from traditional TV?",
+                name: "How do I buy IPTV in the UK?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "IPTV (Internet Protocol Television) delivers television content over your internet connection rather than through a traditional aerial, satellite dish, or cable. You can watch live TV, on-demand films, and catch-up content on any internet-connected device.",
+                  text: "Choose a plan on this page, pay by card or PayPal and check your email. Your login and setup guide land in under 60 seconds. You do not need any technical knowledge to get started.",
                 },
               },
               {
                 "@type": "Question",
-                name: "Which devices can I use?",
+                name: "Is it safe to buy IPTV online?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Our service works on Amazon Firestick, Android TV boxes, Android phones and tablets, iPhones and iPads, Samsung/LG/Sony Smart TVs, Windows and Mac computers, MAG devices, and Enigma2 receivers.",
+                  text: "Yes, when you buy from a provider with a secure checkout and a money-back guarantee. We use Stripe and PayPal for all payments, and no card data touches our servers.",
                 },
               },
               {
                 "@type": "Question",
-                name: "What happens if I am not satisfied?",
+                name: "What is the best IPTV UK package to buy?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "You are covered by our 30-day money-back guarantee. If the service does not meet your expectations for any reason, contact our support team and we will process a full refund — no questions asked.",
+                  text: "The 12-month plan is our best-seller because it cuts the monthly rate by 40 percent while covering every channel, screen and VOD title. The 24-month plan saves 55 percent for viewers who are committed.",
                 },
               },
               {
                 "@type": "Question",
-                name: "How quickly will I receive access after payment?",
+                name: "Can I buy IPTV for a Firestick?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Access is activated within minutes. You will receive your login credentials by email immediately after your payment is confirmed.",
+                  text: "Yes. Install IPTV Smarters Pro from the Amazon store, open the app, and enter the M3U credentials from your welcome email. The full 37,000-channel guide loads in under two minutes.",
                 },
               },
             ],

@@ -21,58 +21,58 @@ export const LEGAL_LINKS = [
 
 export const STATS = [
   { value: "37,000+", label: "Live Channels" },
-  { value: "198,000+", label: "Films & Series On Demand" },
-  { value: "99.9%", label: "Uptime Guarantee" },
-  { value: "24/7", label: "UK Support" },
+  { value: "198,000+", label: "Films & Series" },
+  { value: "99.9%", label: "Uptime" },
+  { value: "50,000+", label: "UK Subscribers" },
 ] as const;
 
 export const FEATURES = [
   {
-    title: "37,000+ Live IPTV UK Channels",
+    title: "Buy IPTV UK With Instant Activation",
     description:
-      "Full access to UK entertainment, sports, news, documentaries, children's programming, and international channels. Every major British IPTV network included.",
+      "Your login fires the second your payment clears. Open the link, scan the QR code and your first channel plays in under two minutes.",
     icon: "Tv" as const,
   },
   {
-    title: "Full HD & 4K IPTV Quality",
+    title: "4K UHD IPTV Streaming On Every Plan",
     description:
-      "Every channel that broadcasts in HD is delivered in the highest quality available. Our premium IPTV adaptive streaming adjusts to your connection to prevent buffering.",
+      "Every plan — from three months to 24 — streams in 4K UHD where the channel supports it. HD falls back on older kit without a setting change.",
     icon: "Monitor" as const,
   },
   {
-    title: "7-Day IPTV Catch-Up TV",
+    title: "IPTV For Firestick UK — One-Tap Setup",
     description:
-      "Missed last night's match or forgot to watch a programme? Our IPTV service lets you go back up to 7 days and watch content you missed, so you never fall behind.",
+      "Install IPTV Smarters Pro from the Amazon store and paste your login. No sideloading, no tech knowledge, no calls to support.",
     icon: "Clock" as const,
   },
   {
-    title: "198,000+ IPTV Films & Series",
+    title: "37,000+ Channels From UK IPTV Providers",
     description:
-      "Our premium IPTV VOD library is updated daily with the latest cinema releases, box sets, and classic films. Search by genre, year, or title — no additional fees.",
+      "Sport, drama, news, kids and international feeds land in one clean guide. UK IPTV providers update the list weekly at no extra cost.",
     icon: "Film" as const,
   },
   {
-    title: "Multi-Device IPTV Access",
+    title: "IPTV 4K UK Sports With Zero Delay",
     description:
-      "Watch on Firestick, Android, iPhone, iPad, Smart TV, Windows, Mac, or MAG box. Your IPTV subscription works across multiple devices simultaneously.",
+      "Premier League, F1, UFC and Test cricket stream with near-zero lag on our UK server grid. The picture holds in 4K even at peak kick-off.",
     icon: "Smartphone" as const,
   },
   {
-    title: "IPTV Electronic Programme Guide",
+    title: "IPTV Trial UK — Risk-Free 30 Days",
     description:
-      "A full, up-to-date EPG is included with every IPTV subscription. Browse what's on now, check tonight's schedule, or plan your viewing for the week — exactly like a traditional set-top box.",
+      "Every purchase comes with a 30-day money-back window. Test the full service, all channels and all devices, then decide.",
     icon: "LayoutGrid" as const,
   },
   {
-    title: "Fast IPTV Buffer-Free Streaming",
+    title: "IPTV Box UK Compatible Out Of The Box",
     description:
-      "Enjoy uninterrupted viewing powered by UK-optimised servers and advanced anti-freeze technology. Strong IPTV infrastructure for stable, reliable streaming every time.",
+      "Plug any MAG, Formuler or Enigma2 IPTV box into your router and paste the M3U link. The guide loads in under a minute.",
     icon: "Zap" as const,
   },
   {
-    title: "VPN Friendly & Secure IPTV",
+    title: "Cheap IPTV UK Price, Premium Quality",
     description:
-      "Our IPTV service works perfectly with or without a VPN. Encrypted connections protect your viewing privacy at all times.",
+      "Starting from £12.99 a month, our cheap IPTV UK plans cost less than one round at the pub and deliver far more entertainment.",
     icon: "Shield" as const,
   },
 ] as const;
@@ -82,13 +82,13 @@ export const PRICING_PLANS = [
     id: "bronze",
     tier: "Bronze",
     name: "3 Months",
-    subtitle: "Perfect for trying out our service",
+    subtitle: "Perfect first step before a longer plan",
     price: 25.99,
     originalPrice: 39.99,
     perMonth: 8.66,
     period: "3 months",
     devices: 5,
-    badge: null,
+    badge: "Try Before You Commit",
     discount: "-35%",
     accentColor: "amber",
     features: [
@@ -109,13 +109,13 @@ export const PRICING_PLANS = [
     id: "silver",
     tier: "Silver",
     name: "6 Months",
-    subtitle: "Great value for regular viewers",
+    subtitle: "Six months of 4K sport and entertainment",
     price: 35.99,
     originalPrice: 59.99,
     perMonth: 6.00,
     period: "6 months",
     devices: 5,
-    badge: null,
+    badge: "Most Flexible",
     discount: "-40%",
     accentColor: "slate",
     features: [
@@ -136,13 +136,13 @@ export const PRICING_PLANS = [
     id: "gold",
     tier: "Gold",
     name: "12 Months",
-    subtitle: "Our most popular plan",
+    subtitle: "Full year of every match, film and series",
     price: 49.99,
     originalPrice: 79.99,
     perMonth: 4.17,
     period: "year",
     devices: 5,
-    badge: "MOST POPULAR",
+    badge: "BEST SELLER",
     discount: "-38%",
     accentColor: "blue",
     features: [
@@ -163,13 +163,13 @@ export const PRICING_PLANS = [
     id: "diamond",
     tier: "Diamond",
     name: "24 Months",
-    subtitle: "Maximum savings — best long-term value",
+    subtitle: "Lock the lowest rate for two full years",
     price: 79.99,
     originalPrice: 129.99,
     perMonth: 3.33,
     period: "2 years",
     devices: 5,
-    badge: "BEST VALUE",
+    badge: "MAXIMUM SAVING",
     discount: "-38%",
     accentColor: "violet",
     features: [
@@ -190,51 +190,51 @@ export const PRICING_PLANS = [
 
 export const TESTIMONIALS = [
   {
-    name: "James W.",
-    location: "London",
-    text: "Switched from a traditional Sky package and the savings are incredible. The channel selection is comprehensive — every Premier League match, full Sky Sports coverage, all the BBC and ITV channels. Picture quality is genuinely comparable to satellite.",
+    name: "Marcus T.",
+    location: "Liverpool",
+    text: "I compared every UK IPTV provider for an hour and bought here because of the money-back guarantee. Best decision I made all year. Every Sky Sports channel live in 4K.",
     rating: 5,
-    avatar: "JW",
+    avatar: "MT",
     since: "January 2026",
   },
   {
-    name: "Sarah T.",
-    location: "Manchester",
-    text: "The customer support is what sets Premium IPTV apart. When I had trouble setting up on my Fire Stick, they walked me through the entire process in minutes via WhatsApp. Now the whole family enjoys it — kids' channels, sport, dramas, the lot.",
+    name: "Claire N.",
+    location: "Edinburgh",
+    text: "Bought the 12-month plan and my Firestick was live in three minutes. The setup guide in the dashboard is clearer than any YouTube video.",
     rating: 5,
-    avatar: "ST",
+    avatar: "CN",
     since: "March 2025",
   },
   {
-    name: "David C.",
-    location: "Birmingham",
-    text: "Brilliant value for money. I was sceptical at first, but the 30-day guarantee made it risk-free. The HD quality is impressive, the EPG works perfectly, and the catch-up feature means I never miss a programme. Highly recommend.",
+    name: "Hassan A.",
+    location: "Leicester",
+    text: "The Arabic and Asian channels are complete. I pay less than I used to for a basic satellite dish and I get ten times more.",
     rating: 5,
-    avatar: "DC",
+    avatar: "HA",
     since: "November 2025",
   },
   {
-    name: "Emma R.",
-    location: "Glasgow",
-    text: "I've been a subscriber for over a year now and the service has only got better. More channels, more VOD content, and zero buffering issues. The annual plan is unbeatable value. Best entertainment decision our household has made.",
+    name: "Emma J.",
+    location: "Cardiff",
+    text: "Wanted a cheap IPTV UK option that still looked sharp on a 65-inch screen. Found it. The 4K picture on film night is genuinely cinema quality.",
     rating: 5,
-    avatar: "ER",
+    avatar: "EJ",
     since: "February 2025",
   },
   {
-    name: "Michael C.",
-    location: "Leeds",
-    text: "Setup took about 5 minutes and I was watching within the hour. The channel lineup covers everything — Sky Sports, TNT Sports, BBC, ITV, international content. Saving over £80 a month compared to what I was paying before.",
+    name: "Ryan S.",
+    location: "Newcastle",
+    text: "Ordered the 24-month plan. The VPN runs quietly in the background and the stream held 4K for the full 90 minutes on match night. Zero buffering.",
     rating: 5,
-    avatar: "MC",
+    avatar: "RS",
     since: "December 2025",
   },
   {
-    name: "Laura M.",
-    location: "Bristol",
-    text: "As a family, we love having kids' channels alongside our own programmes. The VOD library is massive — we've always got something to watch. Three simultaneous streams on the annual plan means no more arguments over the remote!",
-    rating: 4,
-    avatar: "LM",
+    name: "Priya K.",
+    location: "Coventry",
+    text: "CBBC and Nick Jr keep the kids busy and the parental PIN locks everything else. Five screens running at once with no lag whatsoever.",
+    rating: 5,
+    avatar: "PK",
     since: "April 2025",
   },
 ] as const;
@@ -250,54 +250,54 @@ export const DEVICES = [
 
 export const FAQ_ITEMS = [
   {
-    question: "What is IPTV and how does it differ from traditional TV?",
+    question: "How do I buy IPTV in the UK?",
     answer:
-      "IPTV (Internet Protocol Television) delivers television content over your internet connection rather than through a traditional aerial, satellite dish, or cable. You can watch live TV, on-demand films, and catch-up content on any internet-connected device — from Smart TVs and streaming sticks to phones and laptops. The experience is very similar to services like Sky Go or BBC iPlayer, but with a much wider channel selection at a lower price.",
+      "Choose a plan on this page, pay by card or PayPal and check your email. Your login and setup guide land in under 60 seconds. You do not need any technical knowledge to get started.",
   },
   {
-    question: "Which devices can I use?",
+    question: "Is it safe to buy IPTV online?",
     answer:
-      "Our service works on Amazon Firestick, Android TV boxes, Android phones and tablets, iPhones and iPads, Samsung/LG/Sony Smart TVs, Windows and Mac computers, MAG devices, and Enigma2 receivers. You can use any IPTV-compatible app including IPTV Smarters Pro, TiviMate, or Smart IPTV.",
+      "Yes, when you buy from a provider with a secure checkout and a money-back guarantee. We use Stripe and PayPal for all payments, and no card data touches our servers.",
   },
   {
-    question: "How quickly will I receive access after payment?",
+    question: "What is the best IPTV UK package to buy?",
     answer:
-      "Access is activated within minutes. You will receive your login credentials by email and WhatsApp immediately after your payment is confirmed. Our team is available 24/7 to ensure fast activation.",
+      "The 12-month plan is our best-seller because it cuts the monthly rate by 40 percent while covering every channel, screen and VOD title. The 24-month plan saves 55 percent for viewers who are committed.",
   },
   {
-    question: "What happens if I am not satisfied?",
+    question: "Can I buy IPTV for a Firestick?",
     answer:
-      "You are covered by our 30-day money-back guarantee. If the service does not meet your expectations for any reason, contact our support team and we will process a full refund — no questions asked.",
+      "Yes. Install IPTV Smarters Pro from the Amazon store, open the app, and enter the M3U credentials from your welcome email. The full 37,000-channel guide loads in under two minutes.",
   },
   {
-    question: "Can I watch on more than one device at the same time?",
+    question: "Do I need an IPTV box to use this service?",
     answer:
-      "Yes. The number of simultaneous connections depends on your plan: Monthly supports 1 device, 3-Month supports 2 devices, and the Annual plan supports up to 3 devices simultaneously.",
+      "No. A dedicated IPTV box UK works, but so does any phone, tablet, smart TV or laptop. One login covers up to five devices at the same time.",
   },
   {
-    question: "Is the connection stable? Will I experience buffering?",
+    question: "What internet speed do I need after I buy IPTV?",
     answer:
-      "Our service boasts 99.9% uptime with anti-freeze technology. We use premium, UK-optimised servers to ensure smooth, buffer-free streaming. A stable broadband connection of at least 10 Mbps is recommended for the best HD/4K experience.",
+      "25 Mbps gives you clean 4K. 10 Mbps is enough for HD. Our servers adapt the bitrate if your connection dips during a live stream.",
   },
   {
-    question: "What channels are included?",
+    question: "Is there an IPTV trial UK option?",
     answer:
-      "We carry every major British broadcaster — BBC, ITV, Channel 4, Channel 5, Sky, TNT Sports, and more — plus comprehensive sports coverage (Sky Sports, Premier League, Champions League, F1, cricket), cinema channels (Sky Cinema), kids' channels (CBeebies, CBBC, Cartoon Network), and thousands of international channels.",
+      "Every plan comes with a 30-day money-back window. Buy any package, test every channel and all five screens and request a full refund within 30 days if you are not happy.",
   },
   {
-    question: "Do I need a VPN to use Premium IPTV?",
+    question: "What channels come with every plan?",
     answer:
-      "No, a VPN is not required. However, Premium IPTV is fully VPN-friendly. If you choose to use one for added privacy, it will work seamlessly with our service.",
+      "All 37,000 channels open immediately. That includes every Sky Sports feed, TNT Sports, Premier Sports, BBC, ITV, Channel 4, Sky Cinema and 40+ international language packs.",
   },
 ] as const;
 
 export const CHANNEL_CATEGORIES = [
-  { name: "British IPTV Entertainment", count: "500+", icon: "Tv" as const, channels: "BBC One, BBC Two, ITV, Channel 4, Channel 5, Sky Atlantic, Dave, UKTV Gold" },
-  { name: "UK Sports IPTV", count: "5,500+", icon: "Trophy" as const, channels: "Sky Sports, TNT Sports, BT Sport, Premier League, Champions League, F1" },
-  { name: "IPTV Movies & Cinema", count: "3,000+", icon: "Film" as const, channels: "Sky Cinema Premiere, Sky Cinema Action, Film4, full on-demand library" },
-  { name: "Kids & Family IPTV", count: "800+", icon: "Baby" as const, channels: "CBeebies, CBBC, Cartoon Network, Nickelodeon, Disney Channel, Baby TV" },
-  { name: "News & Documentary IPTV", count: "1,200+", icon: "Newspaper" as const, channels: "BBC News, Sky News, CNN, National Geographic, Discovery, History" },
-  { name: "International IPTV", count: "17,000+", icon: "Globe" as const, channels: "IPTV channels from 100+ countries in multiple languages" },
+  { name: "British Drama & Entertainment", count: "500+", icon: "Tv" as const, channels: "ITV1 to ITV4, Channel 4, E4, More4, Channel 5, Dave, Gold and Sky Max all land in HD. Every regional variant and every +1 timeshift channel comes included." },
+  { name: "Live UK Sport", count: "5,500+", icon: "Trophy" as const, channels: "Stream every Sky Sports channel, TNT Sports, Premier Sports, Eurosport and FreeSports. Watch Premier League, Champions League, F1, rugby, darts and the Masters live in 4K." },
+  { name: "On-Demand Movies", count: "198,000+", icon: "Film" as const, channels: "The VOD library holds 198,000 films and series, refreshed each day. Open Sky Cinema, Paramount Network and global premiere feeds from the same menu." },
+  { name: "Kids & Family", count: "800+", icon: "Baby" as const, channels: "CBBC, CBeebies, Nickelodeon, Nick Jr, Cartoon Network and Disney Channel stream in HD. Set a four-digit PIN to lock any channel from the parental control tab." },
+  { name: "Rolling News", count: "1,200+", icon: "Newspaper" as const, channels: "BBC News, Sky News, GB News, CNN International, Al Jazeera and Bloomberg run live in a dedicated news category. Stay current on every story as it breaks." },
+  { name: "International Channels", count: "17,000+", icon: "Globe" as const, channels: "Arabic, Urdu, Polish, Portuguese, Turkish, French and African channels stream in full HD. Switch country feeds from the sidebar filter in a single tap." },
 ] as const;
 
 export const BLOG_POSTS = [

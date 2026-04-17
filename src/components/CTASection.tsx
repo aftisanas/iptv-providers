@@ -52,17 +52,16 @@ export default function CTASection() {
             className="inline-flex items-center gap-2 rounded-full border border-purple-400/20 bg-white/[0.07] backdrop-blur-md px-5 py-2 text-sm text-purple-300 mb-8"
           >
             <Sparkles className="h-4 w-4 text-cyan-400" />
-            <span className="font-medium">Join 15,000+ UK Subscribers</span>
+            <span className="font-medium">Join 50,000+ UK Households</span>
           </motion.div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
-            Buy IPTV & Start Watching{" "}
-            <span className="gradient-text-hero">Today</span>
+            Ready To Buy IPTV UK?{" "}
+            <span className="gradient-text-hero">Start Watching In 60 Seconds</span>
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-gray-300/90 mb-10 leading-relaxed">
-            Join thousands of UK subscribers who have already switched to Premium IPTV
-            for their daily entertainment. With instant activation, a 30-day guarantee,
-            and plans starting from £25.99, there is no risk and no reason to wait.
+            Pick a plan below, pay in under a minute and open your first 4K channel before the kettle boils. Over 50,000 UK households already made the switch.
+            Every order ships with a 30-day refund guarantee, five screens, a built-in VPN and UK support on call.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -71,7 +70,7 @@ export default function CTASection() {
               className="group relative flex items-center gap-2.5 rounded-2xl bg-gradient-to-r from-violet-600 via-purple-600 to-cyan-500 px-8 py-4 text-base font-semibold text-white transition-all hover:shadow-2xl hover:shadow-purple-500/30 active:scale-[0.98] w-full sm:w-auto justify-center"
             >
               <Play className="h-5 w-5 fill-current" />
-              Choose Your Plan & Subscribe Now
+              Buy IPTV Now — From £12.99
               <div className="absolute inset-0 rounded-2xl bg-white/10 opacity-0 transition-opacity group-hover:opacity-100" />
             </Link>
             <a
@@ -81,12 +80,12 @@ export default function CTASection() {
               className="group flex items-center gap-2.5 rounded-2xl border border-white/15 bg-white/[0.06] backdrop-blur-sm px-8 py-4 text-base font-semibold text-white transition-all hover:border-purple-400/30 hover:bg-white/10 w-full sm:w-auto justify-center"
             >
               <MessageCircle className="h-5 w-5 text-cyan-400" />
-              Contact Us on WhatsApp
+              Talk To UK Support
             </a>
           </div>
 
           <p className="mt-8 text-sm text-gray-400">
-            No contracts. No hidden fees. Cancel anytime. 30-day money-back guarantee.
+            Got a question before you buy? WhatsApp or email support@buy-iptv-uk.com — we reply in minutes.
           </p>
         </motion.div>
       </div>

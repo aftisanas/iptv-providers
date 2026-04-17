@@ -21,12 +21,12 @@ export default function TestimonialsSection() {
             Trusted by Thousands
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Trusted IPTV Reviews — What Our{" "}
-            <span className="gradient-text">UK Subscribers</span> Say
+            Real UK Buyers Share Their{" "}
+            <span className="gradient-text">IPTV Reviews</span>
           </h2>
           <p className="mx-auto max-w-xl text-lg text-muted">
-            Don&apos;t just take our word for it — hear from real Premium IPTV subscribers
-            across the United Kingdom.
+            These are real customers, real purchases, real results. No scripted lines,
+            no paid placement.
           </p>
         </motion.div>
 

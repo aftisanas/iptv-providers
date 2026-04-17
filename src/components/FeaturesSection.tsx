@@ -28,12 +28,12 @@ export default function FeaturesSection() {
             Why UK Viewers Choose Us
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            What You Get with Your Premium{" "}
-            <span className="gradient-text">IPTV Subscription</span>
+            What You Get When You{" "}
+            <span className="gradient-text">Buy IPTV From Us</span>
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-muted">
-            Every Premium IPTV subscription includes the following, regardless of which
-            plan you choose. Genuine UK focus, real reliability, proper support.
+            Every purchase unlocks the complete package from day one. Here is exactly
+            what lands in your inbox the moment you pay.
           </p>
         </motion.div>
 
