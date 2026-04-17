@@ -6,22 +6,22 @@ import { Shield, Wifi, Lock, ServerCog } from "lucide-react";
 const trustItems = [
   {
     icon: Shield,
-    title: "30-Day Full Refund — No Questions",
+    title: "30-Day Full Refund When You Buy IPTV Subscription",
     description: "Contact us within 30 days of purchase and we return every penny. No form to fill, no long wait, no excuses.",
   },
   {
     icon: Wifi,
-    title: "99.9% Uptime On Every Channel",
+    title: "Fast IPTV Performance with 99.9% Uptime Guarantee",
     description: "Our monitoring system watches each server every 30 seconds. If a node drops, your stream reroutes before you notice a flicker.",
   },
   {
     icon: Lock,
-    title: "Private Checkout With Built-In VPN",
+    title: "IPTV Subscription UK 4K Security & Private Checkout",
     description: "TLS 1.3 protects your checkout and our built-in VPN protects your streams. Your IP and viewing history stay off the record from the first play.",
   },
   {
     icon: ServerCog,
-    title: "Instant Delivery, No Manual Delays",
+    title: "Cheap IPTV Pricing with Instant Digital Delivery",
     description: "Automation sends your login the moment your payment settles. There is no human in the loop and no working-hours delay.",
   },
 ];

@@ -46,8 +46,8 @@ export default function Navbar() {
             <Link href="/" className="group flex items-center gap-2.5">
               <div className="relative h-12 w-12 lg:h-14 lg:w-14 shrink-0">
                 <Image
-                  src="/premium-iptv-uk-logo.webp"
-                  alt="Premium IPTV UK — Best IPTV Subscription Service"
+                  src="/buy-iptv-uk.webp"
+                  alt="Buy IPTV UK — Best IPTV Subscription Service"
                   fill
                   className="object-contain drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]"
                   priority
@@ -57,7 +57,7 @@ export default function Navbar() {
                 "text-lg font-bold tracking-tight lg:text-xl font-[var(--font-display)] transition-colors duration-500",
                 isScrolled ? "text-foreground" : "text-white"
               )}>
-                Premium<span className={isScrolled ? "gradient-text" : "text-cyan-400"}> IPTV</span>
+                Buy<span className={isScrolled ? "gradient-text" : "text-cyan-400"}> IPTV </span>UK
               </span>
             </Link>
 

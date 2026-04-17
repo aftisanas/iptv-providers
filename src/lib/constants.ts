@@ -1,8 +1,8 @@
 export const WHATSAPP_NUMBER = "";
 export const WHATSAPP_BASE_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
-export const SITE_NAME = "Premium IPTV";
-export const SITE_URL = "https://iptv-premium-uk.tv";
-export const CONTACT_EMAIL = "support@premium-iptv.uk";
+export const SITE_NAME = "Buy IPTV UK";
+export const SITE_URL = "https://buy-iptv-uk.com";
+export const CONTACT_EMAIL = "support@buy-iptv-uk.com";
 
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
@@ -292,12 +292,12 @@ export const FAQ_ITEMS = [
 ] as const;
 
 export const CHANNEL_CATEGORIES = [
-  { name: "British Drama & Entertainment", count: "500+", icon: "Tv" as const, channels: "ITV1 to ITV4, Channel 4, E4, More4, Channel 5, Dave, Gold and Sky Max all land in HD. Every regional variant and every +1 timeshift channel comes included." },
-  { name: "Live UK Sport", count: "5,500+", icon: "Trophy" as const, channels: "Stream every Sky Sports channel, TNT Sports, Premier Sports, Eurosport and FreeSports. Watch Premier League, Champions League, F1, rugby, darts and the Masters live in 4K." },
-  { name: "On-Demand Movies", count: "198,000+", icon: "Film" as const, channels: "The VOD library holds 198,000 films and series, refreshed each day. Open Sky Cinema, Paramount Network and global premiere feeds from the same menu." },
-  { name: "Kids & Family", count: "800+", icon: "Baby" as const, channels: "CBBC, CBeebies, Nickelodeon, Nick Jr, Cartoon Network and Disney Channel stream in HD. Set a four-digit PIN to lock any channel from the parental control tab." },
-  { name: "Rolling News", count: "1,200+", icon: "Newspaper" as const, channels: "BBC News, Sky News, GB News, CNN International, Al Jazeera and Bloomberg run live in a dedicated news category. Stay current on every story as it breaks." },
-  { name: "International Channels", count: "17,000+", icon: "Globe" as const, channels: "Arabic, Urdu, Polish, Portuguese, Turkish, French and African channels stream in full HD. Switch country feeds from the sidebar filter in a single tap." },
+  { name: "British IPTV 4K Drama & Entertainment", count: "500+", icon: "Tv" as const, channels: "ITV1 to ITV4, Channel 4, E4, More4, Channel 5, Dave, Gold and Sky Max all land in HD. Every regional variant and every +1 timeshift channel comes included." },
+  { name: "Live UK Sport on the Best IPTV UK Subscription", count: "5,500+", icon: "Trophy" as const, channels: "Stream every Sky Sports channel, TNT Sports, Premier Sports, Eurosport and FreeSports. Watch Premier League, Champions League, F1, rugby, darts and the Masters live in 4K." },
+  { name: "IPTV UK 4K On-Demand Movies & Cinema", count: "198,000+", icon: "Film" as const, channels: "The VOD library holds 198,000 films and series, refreshed each day. Open Sky Cinema, Paramount Network and global premiere feeds from the same menu." },
+  { name: "Buy IPTV UK for Kids & Family Entertainment", count: "800+", icon: "Baby" as const, channels: "CBBC, CBeebies, Nickelodeon, Nick Jr, Cartoon Network and Disney Channel stream in HD. Set a four-digit PIN to lock any channel from the parental control tab." },
+  { name: "Rolling News from Top-Tier IPTV Providers UK", count: "1,200+", icon: "Newspaper" as const, channels: "BBC News, Sky News, GB News, CNN International, Al Jazeera and Bloomberg run live in a dedicated news category. Stay current on every story as it breaks." },
+  { name: "Premium IPTV UK International Channels", count: "17,000+", icon: "Globe" as const, channels: "Arabic, Urdu, Polish, Portuguese, Turkish, French and African channels stream in full HD. Switch country feeds from the sidebar filter in a single tap." },
 ] as const;
 
 export const BLOG_POSTS = [

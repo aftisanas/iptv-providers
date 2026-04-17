@@ -16,14 +16,14 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-2.5 mb-4">
               <div className="relative h-12 w-12 shrink-0">
                 <Image
-                  src="/premium-iptv-uk-logo.webp"
-                  alt="Premium IPTV UK — Best IPTV Subscription Service"
+                  src="/buy-iptv-uk.webp"
+                  alt="Buy IPTV UK — Best IPTV Subscription Service"
                   fill
                   className="object-contain drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]"
                 />
               </div>
               <span className="text-lg font-bold text-foreground">
-                Premium<span className="gradient-text"> IPTV</span>
+                Buy<span className="gradient-text"> IPTV </span>UK
               </span>
             </Link>
             <p className="text-sm text-muted leading-relaxed mb-6">
