@@ -64,42 +64,6 @@ export default function ChannelsSection() {
           })}
         </div>
 
-        {/* Live channels preview */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mt-16 rounded-2xl border border-violet-100/60 bg-white p-6 lg:p-8 shadow-sm"
-        >
-          <div className="flex items-center gap-3 mb-6">
-            <div className="relative flex h-3 w-3">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75" />
-              <span className="relative inline-flex h-3 w-3 rounded-full bg-red-500" />
-            </div>
-            <span className="text-sm font-medium text-foreground">Live Channels Preview</span>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            {[
-              "Sky Sports", "TNT Sports", "BBC One", "ITV Hub", "Channel 4",
-              "Sky Cinema", "BBC Two", "Sky News", "Dave", "E4",
-              "Film4", "BT Sport",
-            ].map((name, i) => (
-              <motion.div
-                key={name}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.03 }}
-                className="group flex items-center justify-center rounded-xl border border-violet-100/50 bg-violet-50/30 p-4 h-16 transition-all hover:border-violet-200 hover:bg-violet-50 cursor-default"
-              >
-                <span className="text-xs font-medium text-muted text-center transition-colors group-hover:text-violet-600">
-                  {name}
-                </span>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
       </div>
     </section>
   );

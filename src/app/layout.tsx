@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: "%s | Premium IPTV",
   },
   description:
-    "Buy IPTV in the UK and get 37,000 channels, 4K UHD, built-in VPN and instant setup. From £25.99 with a 30-day money-back guarantee. Activate in 60 seconds.",
+    "Buy IPTV in the UK and get 37,000 channels, 4K UHD, built-in VPN and instant setup. From £12.99 with a 30-day money-back guarantee. Activate in 60 seconds.",
   keywords: [
     "buy IPTV UK",
     "buy IPTV",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Buy IPTV UK — 37,000 Channels, 4K UHD, From £12.99",
     description:
-      "Buy IPTV in the UK and get 37,000 channels, 4K UHD, built-in VPN and instant setup. From £25.99 with a 30-day money-back guarantee.",
+      "Buy IPTV in the UK and get 37,000 channels, 4K UHD, built-in VPN and instant setup. From £12.99 with a 30-day money-back guarantee.",
   },
   robots: {
     index: true,
