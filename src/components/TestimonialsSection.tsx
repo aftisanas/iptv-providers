@@ -26,7 +26,7 @@ export default function TestimonialsSection() {
           </h2>
           <p className="mx-auto max-w-xl text-lg text-muted">
             Genuine{" "}
-            <Link href="/reviews" className="text-violet-600 hover:text-violet-700 underline-offset-2 hover:underline">
+            <Link href="#testimonials" className="text-violet-600 hover:text-violet-700 underline-offset-2 hover:underline">
               UK customer reviews
             </Link>
             , real purchases, real results — no scripted lines, no paid placement.
@@ -94,7 +94,7 @@ export default function TestimonialsSection() {
           className="mt-12 text-center"
         >
           <Link
-            href="/reviews"
+            href="#testimonials"
             className="group inline-flex items-center gap-2 rounded-xl border border-violet-200 bg-white px-6 py-3 text-sm font-medium text-foreground transition-all hover:border-violet-300 hover:bg-violet-50 shadow-sm"
           >
             Read More Reviews

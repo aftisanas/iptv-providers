@@ -28,7 +28,7 @@ export default function DevicesSection() {
           </h2>
           <p className="mx-auto max-w-xl text-lg text-muted">
             One{" "}
-            <Link href="/pricing" className="text-violet-600 hover:text-violet-700 underline-offset-2 hover:underline">
+            <Link href="#pricing" className="text-violet-600 hover:text-violet-700 underline-offset-2 hover:underline">
               IPTV purchase
             </Link>
             , one login, five screens — the IPTV service runs on every device in the household with no extra hardware required.

@@ -28,7 +28,7 @@ export default function ChannelsSection() {
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-muted">
             A single{" "}
-            <Link href="/pricing" className="text-violet-600 hover:text-violet-700 underline-offset-2 hover:underline">
+            <Link href="#pricing" className="text-violet-600 hover:text-violet-700 underline-offset-2 hover:underline">
               IPTV UK plan
             </Link>{" "}
             opens every category below at once — no add-ons, no bolt-ons, no hidden fees.

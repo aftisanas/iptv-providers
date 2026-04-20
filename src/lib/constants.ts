@@ -23,7 +23,7 @@ export const STATS = [
   { value: "37,000+", label: "Live Channels" },
   { value: "198,000+", label: "Films & Series" },
   { value: "99.9%", label: "Uptime" },
-  { value: "50,000+", label: "UK Subscribers" },
+  { value: "50,000+", label: "IPTV UK Subscribers" },
 ] as const;
 
 export const FEATURES = [

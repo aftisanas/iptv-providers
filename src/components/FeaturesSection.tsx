@@ -34,7 +34,7 @@ export default function FeaturesSection() {
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-muted">
             Every{" "}
-            <Link href="/pricing" className="text-violet-600 hover:text-violet-700 underline-offset-2 hover:underline">
+            <Link href="#pricing" className="text-violet-600 hover:text-violet-700 underline-offset-2 hover:underline">
               IPTV subscription
             </Link>{" "}
             unlocks the complete package from day one — login credentials and setup guide land in the inbox the moment payment is confirmed.

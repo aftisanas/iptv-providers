@@ -30,8 +30,8 @@ export default function FAQSection() {
           </h2>
           <p className="text-lg text-muted">
             Essential information to review before{" "}
-            <Link href="/pricing" className="text-violet-600 hover:text-violet-700 underline-offset-2 hover:underline">
-              buying IPTV
+            <Link href="/blog" className="text-violet-600 hover:text-violet-700 underline-offset-2 hover:underline">
+              buy IPTV
             </Link>{" "}
             in the UK.
           </p>

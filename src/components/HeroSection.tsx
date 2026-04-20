@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 import { Play, MessageCircle, ChevronRight } from "lucide-react";
 import { WHATSAPP_BASE_URL } from "@/lib/constants";
 import ParticleBackground from "./ParticleBackground";
+import PromoBanner from "./PromoBanner";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative h-screen min-h-[640px] flex flex-col overflow-hidden"
+      className="relative h-[104vh] min-h-[640px] flex flex-col overflow-hidden"
     >
       {/* ── Deep premium gradient background ── */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0a0118] via-[#1a0a3e] to-[#0c1445]" />
@@ -63,7 +63,7 @@ export default function HeroSection() {
       <ParticleBackground />
 
       {/* ── Content ── */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-36 pb-2 flex flex-col items-center text-center">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-[7.5rem] lg:pt-32 pb-2 flex flex-col items-center text-center">
         {/* Headline — 2 lines, matches reference sizing */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
@@ -87,58 +87,14 @@ export default function HeroSection() {
            IPTV Subscription and Login in 60 Seconds — No waiting. No contracts. No dish.
         </motion.p>
 
-        {/* Hero device image — natural size, CTAs flow right under it */}
+        {/* Promo banner — replaces hero device image */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.25 }}
-          className="relative leading-none -mt-20 -mb-24"
+          className="relative w-full mt-6 sm:mt-8"
         >
-          {/* Wide halo glow radiating from behind the TV */}
-          <div
-            aria-hidden
-            className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[55%] w-[110%] h-[95%] blur-3xl"
-            style={{
-              background:
-                "radial-gradient(ellipse at center, rgba(168,85,247,0.75) 0%, rgba(124,58,237,0.45) 25%, rgba(59,130,246,0.25) 45%, rgba(6,182,212,0.1) 65%, transparent 80%)",
-            }}
-          />
-          {/* Inner hot-core glow right behind the screen */}
-          <div
-            aria-hidden
-            className="pointer-events-none absolute left-1/2 top-[38%] -translate-x-1/2 -translate-y-1/2 w-[55%] h-[45%] blur-2xl"
-            style={{
-              background:
-                "radial-gradient(ellipse at center, rgba(192,132,252,0.7) 0%, rgba(139,92,246,0.35) 45%, transparent 75%)",
-            }}
-          />
-          {/* Bright floor reflection under the devices */}
-          <div
-            aria-hidden
-            className="pointer-events-none absolute left-1/2 bottom-[14%] -translate-x-1/2 w-[75%] h-[18%] blur-3xl"
-            style={{
-              background:
-                "radial-gradient(ellipse at center, rgba(168,85,247,0.75) 0%, rgba(124,58,237,0.4) 40%, rgba(59,130,246,0.2) 65%, transparent 85%)",
-            }}
-          />
-          {/* Tight floor line right under the devices */}
-          <div
-            aria-hidden
-            className="pointer-events-none absolute left-1/2 bottom-[19%] -translate-x-1/2 w-[45%] h-[4%] blur-xl"
-            style={{
-              background:
-                "radial-gradient(ellipse at center, rgba(216,180,254,0.85) 0%, rgba(139,92,246,0.3) 60%, transparent 90%)",
-            }}
-          />
-          <Image
-            src="/buy iptv.webp"
-            alt="IPTV streaming on TV, tablet, phone and laptop"
-            width={1264}
-            height={842}
-            priority
-            sizes="(max-width: 768px) 100vw, (max-width: 1280px) 85vw, 1100px"
-            className="relative block mx-auto w-auto max-w-full h-auto max-h-[75vh] object-contain select-none pointer-events-none drop-shadow-[0_30px_60px_rgba(88,28,135,0.55)]"
-          />
+          <PromoBanner />
         </motion.div>
 
         {/* CTA Buttons — directly under image */}
@@ -146,14 +102,14 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.35 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4"
+          className="mt-10 sm:mt-12 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4"
         >
           <Link
-            href="/pricing"
+            href="#pricing"
             className="group relative flex items-center gap-2.5 rounded-2xl bg-gradient-to-r from-violet-600 via-purple-600 to-cyan-500 px-7 py-3.5 text-sm sm:text-base font-semibold text-white shadow-lg shadow-purple-900/40 transition-all hover:shadow-2xl hover:shadow-purple-500/40 active:scale-[0.98] w-full sm:w-auto justify-center"
           >
             <Play className="h-5 w-5 fill-current" />
-            <span>Buy IPTV Now — From £4.99</span>
+            <span>Buy IPTV Now — From £12.99</span>
             <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             <div className="absolute inset-0 rounded-2xl bg-white/10 opacity-0 transition-opacity group-hover:opacity-100" />
           </Link>
