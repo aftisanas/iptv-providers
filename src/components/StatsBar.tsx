@@ -6,33 +6,30 @@ import { STATS } from "@/lib/constants";
 
 function AnimatedNumber({ value }: { value: string }) {
   const ref = useRef<HTMLSpanElement>(null);
-  const isInView = useInView(ref, { once: true });
-  const [displayed, setDisplayed] = useState("0");
+  const inView = useInView(ref, { once: true, amount: 0.2, margin: "0px 0px -10% 0px" });
+  const numericMatch = value.match(/[\d,]+/);
+  const numericStr = numericMatch ? numericMatch[0] : "";
+  const prefix = numericStr ? value.slice(0, value.indexOf(numericStr)) : "";
+  const suffix = numericStr ? value.slice(value.indexOf(numericStr) + numericStr.length) : "";
+  const [displayed, setDisplayed] = useState(numericStr ? `${prefix}0${suffix}` : value);
 
   useEffect(() => {
-    if (!isInView) return;
-
-    const numericMatch = value.match(/[\d,]+/);
-    if (!numericMatch) {
-      setDisplayed(value);
+    if (!inView || !numericStr) {
+      if (!numericStr) setDisplayed(value);
       return;
     }
 
-    const numericStr = numericMatch[0];
     const target = parseInt(numericStr.replace(/,/g, ""), 10);
-    const prefix = value.slice(0, value.indexOf(numericStr));
-    const suffix = value.slice(value.indexOf(numericStr) + numericStr.length);
-    const duration = 2000;
-    const steps = 60;
+    const duration = 900;
+    const steps = 36;
     const stepTime = duration / steps;
-    let current = 0;
     let step = 0;
 
     const timer = setInterval(() => {
       step++;
       const progress = step / steps;
       const easeOut = 1 - Math.pow(1 - progress, 3);
-      current = Math.round(target * easeOut);
+      const current = Math.round(target * easeOut);
       setDisplayed(`${prefix}${current.toLocaleString()}${suffix}`);
 
       if (step >= steps) {
@@ -42,7 +39,7 @@ function AnimatedNumber({ value }: { value: string }) {
     }, stepTime);
 
     return () => clearInterval(timer);
-  }, [isInView, value]);
+  }, [inView, value, numericStr, prefix, suffix]);
 
   return <span ref={ref}>{displayed}</span>;
 }
@@ -61,8 +58,8 @@ export default function StatsBar() {
               key={stat.label}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
+              viewport={{ once: true, amount: 0.2, margin: "0px 0px -10% 0px" }}
+              transition={{ delay: i * 0.04, duration: 0.35 }}
               className="relative text-center"
             >
               <div className="text-3xl sm:text-4xl lg:text-5xl font-bold gradient-text mb-2">

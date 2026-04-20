@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 import { Play, MessageCircle, Sparkles } from "lucide-react";
-import { WHATSAPP_BASE_URL } from "@/lib/constants";
 import Link from "next/link";
+import SectionLink from "./SectionLink";
 
 export default function CTASection() {
   return (
@@ -61,9 +61,9 @@ export default function CTASection() {
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-gray-300/90 mb-10 leading-relaxed">
             A{" "}
-            <Link href="#pricing" className="text-cyan-300 hover:text-cyan-200 underline-offset-2 hover:underline">
+            <SectionLink href="/#pricing" className="text-cyan-300 hover:text-cyan-200 underline-offset-2 hover:underline">
               plan selection
-            </Link>{" "}
+            </SectionLink>{" "}
             takes under a minute, with the first 4K channel opening before the kettle boils. Over 50,000 UK households have already made the switch. Every order ships with a{" "}
             <Link href="/refund" className="text-cyan-300 hover:text-cyan-200 underline-offset-2 hover:underline">
               30-day refund guarantee
@@ -76,23 +76,21 @@ export default function CTASection() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link
-              href="#pricing"
+            <SectionLink
+              href="/#pricing"
               className="group relative flex items-center gap-2.5 rounded-2xl bg-gradient-to-r from-violet-600 via-purple-600 to-cyan-500 px-8 py-4 text-base font-semibold text-white transition-all hover:shadow-2xl hover:shadow-purple-500/30 active:scale-[0.98] w-full sm:w-auto justify-center"
             >
               <Play className="h-5 w-5 fill-current" />
-              Buy IPTV Now — From £4.99
+              Buy IPTV Now — Starting at £12.99/month
               <div className="absolute inset-0 rounded-2xl bg-white/10 opacity-0 transition-opacity group-hover:opacity-100" />
-            </Link>
-            <a
-              href={`${WHATSAPP_BASE_URL}?text=${encodeURIComponent("Hello Premium IPTV, I'd like to subscribe!")}`}
-              target="_blank"
-              rel="noopener noreferrer"
+            </SectionLink>
+            <SectionLink
+              href="/#pricing"
               className="group flex items-center gap-2.5 rounded-2xl border border-white/15 bg-white/[0.06] backdrop-blur-sm px-8 py-4 text-base font-semibold text-white transition-all hover:border-purple-400/30 hover:bg-white/10 w-full sm:w-auto justify-center"
             >
               <MessageCircle className="h-5 w-5 text-cyan-400" />
               Talk To UK Support
-            </a>
+            </SectionLink>
           </div>
 
           <p className="mt-8 text-sm text-gray-400">

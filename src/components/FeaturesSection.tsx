@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import {
   Tv, Monitor, Clock, Film, Smartphone, LayoutGrid, Zap, Shield,
 } from "lucide-react";
-import Link from "next/link";
+import SectionLink from "./SectionLink";
 import { FEATURES } from "@/lib/constants";
 
 const iconMap = {
@@ -34,9 +34,9 @@ export default function FeaturesSection() {
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-muted">
             Every{" "}
-            <Link href="#pricing" className="text-violet-600 hover:text-violet-700 underline-offset-2 hover:underline">
+            <SectionLink href="/#pricing" className="text-violet-600 hover:text-violet-700 underline-offset-2 hover:underline">
               IPTV subscription
-            </Link>{" "}
+            </SectionLink>{" "}
             unlocks the complete package from day one — login credentials and setup guide land in the inbox the moment payment is confirmed.
           </p>
         </motion.div>

@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import Link from "next/link";
+import SectionLink from "./SectionLink";
 import { FAQ_ITEMS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
@@ -29,10 +30,14 @@ export default function FAQSection() {
             <span className="gradient-text">Questions, Answered</span>
           </h2>
           <p className="text-lg text-muted">
-            Essential information to review before{" "}
+            Essential information to{" "}
             <Link href="/blog" className="text-violet-600 hover:text-violet-700 underline-offset-2 hover:underline">
-              buy IPTV
+              review
             </Link>{" "}
+            before{" "}
+            <SectionLink href="/#pricing" className="text-violet-600 hover:text-violet-700 underline-offset-2 hover:underline">
+              buy IPTV
+            </SectionLink>{" "}
             in the UK.
           </p>
         </motion.div>

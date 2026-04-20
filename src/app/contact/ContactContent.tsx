@@ -1,19 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Phone, MessageCircle, Clock, MapPin, Headphones, Star } from "lucide-react";
-import { WHATSAPP_BASE_URL, CONTACT_EMAIL, WHATSAPP_NUMBER } from "@/lib/constants";
+import { Mail, Clock, MapPin, Headphones, Star, HeadphonesIcon } from "lucide-react";
+import { CONTACT_EMAIL } from "@/lib/constants";
 
 const contactMethods = [
-  {
-    icon: MessageCircle,
-    title: "WhatsApp",
-    description: "Our fastest response channel. Get help in under 5 minutes.",
-    detail: WHATSAPP_NUMBER,
-    action: `${WHATSAPP_BASE_URL}?text=${encodeURIComponent("Hello Premium IPTV, I need assistance.")}`,
-    badge: "Recommended",
-    badgeColor: "bg-emerald-50 text-emerald-700 border border-emerald-200",
-  },
   {
     icon: Mail,
     title: "Email Us",
@@ -22,15 +13,6 @@ const contactMethods = [
     action: `mailto:${CONTACT_EMAIL}`,
     badge: "24/7",
     badgeColor: "bg-primary/10 text-primary border border-primary/10",
-  },
-  {
-    icon: Phone,
-    title: "Call Us",
-    description: "Speak directly with our UK-based support team.",
-    detail: WHATSAPP_NUMBER,
-    action: `tel:${WHATSAPP_NUMBER}`,
-    badge: "Available",
-    badgeColor: "bg-accent/10 text-accent border border-accent/10",
   },
 ];
 
@@ -88,7 +70,7 @@ export default function ContactContent() {
             transition={{ duration: 0.5 }}
             className="inline-flex items-center gap-2 rounded-full border border-purple-400/20 bg-white/[0.07] backdrop-blur-md px-5 py-2.5 text-sm text-purple-200 mb-8"
           >
-            <Headphones className="h-4 w-4 text-cyan-400" />
+            <HeadphonesIcon className="h-4 w-4 text-cyan-400" />
             <span className="font-medium">Dedicated UK Support — 24/7</span>
             <span className="flex gap-0.5 text-amber-400">
               {[...Array(5)].map((_, i) => <Star key={i} className="h-3 w-3 fill-current" />)}
@@ -124,13 +106,11 @@ export default function ContactContent() {
       {/* Contact Methods */}
       <section className="pb-16">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 gap-6 max-w-md mx-auto">
             {contactMethods.map((method, i) => (
               <motion.a
                 key={method.title}
                 href={method.action}
-                target={method.title === "WhatsApp" ? "_blank" : undefined}
-                rel={method.title === "WhatsApp" ? "noopener noreferrer" : undefined}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}

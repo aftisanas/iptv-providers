@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Clock, ArrowLeft, Tag } from "lucide-react";
 import Link from "next/link";
-import { WHATSAPP_BASE_URL } from "@/lib/constants";
+import SectionLink from "@/components/SectionLink";
 
 interface BlogPostContentProps {
   post: {
@@ -143,14 +143,12 @@ export default function BlogPostContent({ post, content }: BlogPostContentProps)
             <p className="text-muted mb-6">
               Get started with Premium IPTV today. Plans from £4.99 with a 30-day money-back guarantee.
             </p>
-            <a
-              href={`${WHATSAPP_BASE_URL}?text=${encodeURIComponent("Hello Premium IPTV, I just read your blog and would like to subscribe!")}`}
-              target="_blank"
-              rel="noopener noreferrer"
+            <SectionLink
+              href="/#pricing"
               className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 via-purple-600 to-cyan-500 px-8 py-3.5 text-sm font-semibold text-white transition-all hover:shadow-lg hover:shadow-primary/20"
             >
               View Subscription Plans
-            </a>
+            </SectionLink>
           </motion.div>
         </div>
       </article>

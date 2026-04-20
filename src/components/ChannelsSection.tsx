@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Tv, Trophy, Film, Baby, Newspaper, Globe } from "lucide-react";
-import Link from "next/link";
+import SectionLink from "./SectionLink";
 import { CHANNEL_CATEGORIES } from "@/lib/constants";
 
 const iconMap = { Tv, Trophy, Film, Baby, Newspaper, Globe } as const;
@@ -28,9 +28,9 @@ export default function ChannelsSection() {
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-muted">
             A single{" "}
-            <Link href="#pricing" className="text-violet-600 hover:text-violet-700 underline-offset-2 hover:underline">
+            <SectionLink href="/#pricing" className="text-violet-600 hover:text-violet-700 underline-offset-2 hover:underline">
               IPTV UK plan
-            </Link>{" "}
+            </SectionLink>{" "}
             opens every category below at once — no add-ons, no bolt-ons, no hidden fees.
           </p>
         </motion.div>

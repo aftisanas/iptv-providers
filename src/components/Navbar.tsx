@@ -5,8 +5,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { NAV_LINKS, WHATSAPP_BASE_URL } from "@/lib/constants";
+import { NAV_LINKS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
+import SectionLink from "@/components/SectionLink";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -66,7 +67,7 @@ export default function Navbar() {
             {/* Desktop Nav */}
             <nav className="hidden lg:flex items-center gap-1">
               {NAV_LINKS.map((link) => (
-                <Link
+                <SectionLink
                   key={link.href}
                   href={link.href}
                   className={cn(
@@ -83,20 +84,18 @@ export default function Navbar() {
                       ? "bg-gradient-to-r from-violet-600 to-cyan-500"
                       : "bg-gradient-to-r from-purple-400 to-cyan-400"
                   )} />
-                </Link>
+                </SectionLink>
               ))}
             </nav>
 
             {/* Desktop CTA */}
             <div className="hidden lg:flex items-center gap-3">
-              <a
-                href={`${WHATSAPP_BASE_URL}?text=${encodeURIComponent("Hello Premium IPTV, I'd like to get started!")}`}
-                target="_blank"
-                rel="noopener noreferrer"
+              <SectionLink
+                href="/#pricing"
                 className="relative overflow-hidden rounded-lg bg-gradient-to-r from-violet-600 to-cyan-500 px-5 py-2.5 text-sm font-semibold text-white transition-all hover:shadow-lg hover:shadow-purple-500/20 active:scale-[0.98]"
               >
                 <span className="relative z-10">Get Started</span>
-              </a>
+              </SectionLink>
             </div>
 
             {/* Mobile Menu Button */}
@@ -163,25 +162,24 @@ export default function Navbar() {
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ delay: i * 0.05 }}
                   >
-                    <Link
+                    <SectionLink
                       href={link.href}
                       onClick={() => setIsMobileOpen(false)}
                       className="block rounded-lg px-4 py-3 text-base font-medium text-muted transition-all hover:bg-violet-50 hover:text-foreground"
                     >
                       {link.label}
-                    </Link>
+                    </SectionLink>
                   </motion.div>
                 ))}
               </nav>
               <div className="mt-8 flex flex-col gap-3">
-                <a
-                  href={`${WHATSAPP_BASE_URL}?text=${encodeURIComponent("Hello Premium IPTV, I'd like to get started!")}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <SectionLink
+                  href="/#pricing"
+                  onClick={() => setIsMobileOpen(false)}
                   className="rounded-lg bg-gradient-to-r from-violet-600 to-cyan-500 px-4 py-3 text-center text-sm font-semibold text-white"
                 >
                   Get Started
-                </a>
+                </SectionLink>
               </div>
             </motion.div>
           </motion.div>

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Star, Quote, MapPin } from "lucide-react";
 import { TESTIMONIALS } from "@/lib/constants";
-import Link from "next/link";
+import SectionLink from "./SectionLink";
 
 export default function TestimonialsSection() {
   return (
@@ -26,9 +26,9 @@ export default function TestimonialsSection() {
           </h2>
           <p className="mx-auto max-w-xl text-lg text-muted">
             Genuine{" "}
-            <Link href="#testimonials" className="text-violet-600 hover:text-violet-700 underline-offset-2 hover:underline">
+            <SectionLink href="/#testimonials" className="text-violet-600 hover:text-violet-700 underline-offset-2 hover:underline">
               UK customer reviews
-            </Link>
+            </SectionLink>
             , real purchases, real results — no scripted lines, no paid placement.
           </p>
         </motion.div>
@@ -93,13 +93,13 @@ export default function TestimonialsSection() {
           viewport={{ once: true }}
           className="mt-12 text-center"
         >
-          <Link
-            href="#testimonials"
+          <SectionLink
+            href="/#testimonials"
             className="group inline-flex items-center gap-2 rounded-xl border border-violet-200 bg-white px-6 py-3 text-sm font-medium text-foreground transition-all hover:border-violet-300 hover:bg-violet-50 shadow-sm"
           >
             Read More Reviews
             <span className="transition-transform group-hover:translate-x-1">→</span>
-          </Link>
+          </SectionLink>
         </motion.div>
       </div>
     </section>

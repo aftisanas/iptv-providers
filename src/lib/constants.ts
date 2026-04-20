@@ -1,15 +1,13 @@
-export const WHATSAPP_NUMBER = "";
-export const WHATSAPP_BASE_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
 export const SITE_NAME = "Buy IPTV UK";
 export const SITE_URL = "https://buy-iptv-uk.com";
 export const CONTACT_EMAIL = "support@buy-iptv-uk.com";
 
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
-  { label: "Why Us", href: "#features" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "Reviews", href: "#testimonials" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Why Us", href: "/#features" },
+  { label: "Pricing", href: "/#pricing" },
+  { label: "Reviews", href: "/#testimonials" },
+  { label: "FAQ", href: "/#faq" },
 ] as const;
 
 export const LEGAL_LINKS = [
@@ -30,7 +28,7 @@ export const FEATURES = [
   {
     title: "Buy IPTV UK With Instant Activation",
     description:
-      "Your login fires the second your payment clears. Open the link, scan the QR code and your first channel plays in under two minutes.",
+      "Your IPTV UK login info is sent the second your payment clears. Log in instantly and easily with the details provided and your first channel plays in under minute",
     icon: "Tv" as const,
   },
   {
@@ -40,9 +38,9 @@ export const FEATURES = [
     icon: "Monitor" as const,
   },
   {
-    title: "IPTV For Firestick UK — One-Tap Setup",
+    title: "IPTV UK — One-Tap Setup",
     description:
-      "Install IPTV Smarters Pro from the Amazon store and paste your login. No sideloading, no tech knowledge, no calls to support.",
+      "Simply open the IPTV app on your Smart TV or device and paste your login. No sideloading, no tech skills needed, no support calls.",
     icon: "Clock" as const,
   },
   {

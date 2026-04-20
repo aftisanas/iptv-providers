@@ -50,9 +50,14 @@ export default function PromoBanner() {
 
   useEffect(() => {
     const end = getOrCreateEndTime();
-    setEndTime(end);
-    setTimeLeft(calculateTimeLeft(end));
-    setMounted(true);
+
+    const timeoutId = window.setTimeout(() => {
+      setEndTime(end);
+      setTimeLeft(calculateTimeLeft(end));
+      setMounted(true);
+    }, 0);
+
+    return () => window.clearTimeout(timeoutId);
   }, []);
 
   useEffect(() => {

@@ -8,8 +8,20 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import FAQSection from "@/components/FAQSection";
 import TrustSection from "@/components/TrustSection";
 import CTASection from "@/components/CTASection";
+import {
+  CONTACT_EMAIL,
+  PRICING_PLANS,
+  SITE_NAME,
+  SITE_URL,
+} from "@/lib/constants";
 
 export default function HomePage() {
+  const organizationId = `${SITE_URL}/#organization`;
+  const websiteId = `${SITE_URL}/#website`;
+  const webpageId = `${SITE_URL}/#webpage`;
+  const productId = `${SITE_URL}/#product`;
+  const logoUrl = `${SITE_URL}/buy-iptv-uk.webp`;
+
   return (
     <>
       <HeroSection />
@@ -32,52 +44,45 @@ export default function HomePage() {
             "@graph": [
               {
                 "@type": "Organization",
-                "@id": "https://buy-iptv-uk.com/#organization",
-                name: "Buy IPTV UK | IPTV Subscription With 37,000 Channels in 4K From £4.99",
-                url: "https://buy-iptv-uk.com",
+                "@id": organizationId,
+                name: SITE_NAME,
+                url: SITE_URL,
                 logo: {
                   "@type": "ImageObject",
-                  url: "https://buy-iptv-uk.com/buy-iptv-uk.webp",
-                  width: 512,
-                  height: 512,
+                  url: logoUrl,
                 },
                 contactPoint: {
                   "@type": "ContactPoint",
                   contactType: "customer service",
                   availableLanguage: "English",
                   areaServed: "GB",
+                  email: CONTACT_EMAIL,
                 },
               },
               {
                 "@type": "WebSite",
-                "@id": "https://buy-iptv-uk.com/#website",
-                name: "Buy IPTV UK | IPTV Subscription With 37,000 Channels in 4K From £4.99",
-                url: "https://buy-iptv-uk.com",
+                "@id": websiteId,
+                name: SITE_NAME,
+                url: SITE_URL,
                 inLanguage: "en-GB",
                 publisher: {
-                  "@id": "https://buy-iptv-uk.com/#organization",
-                },
-                potentialAction: {
-                  "@type": "SearchAction",
-                  target:
-                    "https://buy-iptv-uk.com/?s={search_term_string}",
-                  "query-input": "required name=search_term_string",
+                  "@id": organizationId,
                 },
               },
               {
                 "@type": "WebPage",
-                "@id": "https://buy-iptv-uk.com/#webpage",
-                url: "https://buy-iptv-uk.com",
-                name: "Buy IPTV UK | IPTV Subscription With 37,000 Channels in 4K From £4.99",
+                "@id": webpageId,
+                url: SITE_URL,
+                name: "Buy IPTV UK | IPTV Subscription",
                 inLanguage: "en-GB",
                 isPartOf: {
-                  "@id": "https://buy-iptv-uk.com/#website",
+                  "@id": websiteId,
                 },
                 about: {
-                  "@id": "https://buy-iptv-uk.com/#organization",
+                  "@id": organizationId,
                 },
                 description:
-                  "Buy IPTV in the UK and get 37,000 channels, 4K UHD, built-in VPN and instant setup. From £4.99 with a 30-day money-back guarantee.",
+                  "Buy IPTV in the UK with instant activation, 4K UHD channels, multi-device streaming, and 24/7 support.",
               },
             ],
           }),
@@ -89,54 +94,22 @@ export default function HomePage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Product",
-            name: "Buy IPTV UK Subscription",
+            "@id": productId,
+            name: `${SITE_NAME} Subscription`,
+            url: SITE_URL,
+            image: [logoUrl],
             description:
               "Buy IPTV UK subscription with 37,000+ live channels and 198,000+ VOD titles in HD & 4K quality.",
-            brand: { "@type": "Brand", name: "Buy IPTV UK" },
-            image: "https://buy-iptv-uk.com/buy-iptv-uk.webp",
-            url: "https://buy-iptv-uk.com/#pricing",
-            offers: [
-              {
-                "@type": "Offer",
-                name: "Bronze — 3 Months",
-                sku: "bronze-3m",
-                url: "https://buy-iptv-uk.com/#pricing",
-                price: "29.99",
-                priceCurrency: "GBP",
-                availability: "https://schema.org/InStock",
-                priceValidUntil: "2026-12-31",
-              },
-              {
-                "@type": "Offer",
-                name: "Silver — 6 Months",
-                sku: "silver-6m",
-                url: "https://buy-iptv-uk.com/#pricing",
-                price: "39.99",
-                priceCurrency: "GBP",
-                availability: "https://schema.org/InStock",
-                priceValidUntil: "2026-12-31",
-              },
-              {
-                "@type": "Offer",
-                name: "Gold — 12 Months",
-                sku: "gold-12m",
-                url: "https://buy-iptv-uk.com/#pricing",
-                price: "59.99",
-                priceCurrency: "GBP",
-                availability: "https://schema.org/InStock",
-                priceValidUntil: "2026-12-31",
-              },
-              {
-                "@type": "Offer",
-                name: "Diamond — 24 Months",
-                sku: "diamond-24m",
-                url: "https://buy-iptv-uk.com/#pricing",
-                price: "89.99",
-                priceCurrency: "GBP",
-                availability: "https://schema.org/InStock",
-                priceValidUntil: "2026-12-31",
-              },
-            ],
+            brand: { "@type": "Brand", name: SITE_NAME },
+            offers: PRICING_PLANS.map((plan) => ({
+              "@type": "Offer",
+              name: `${plan.name} Plan`,
+              price: plan.price.toFixed(2),
+              priceCurrency: "GBP",
+              availability: "https://schema.org/InStock",
+              itemCondition: "https://schema.org/NewCondition",
+              url: `${SITE_URL}/#pricing`,
+            })),
             aggregateRating: {
               "@type": "AggregateRating",
               ratingValue: "4.9",

@@ -2,16 +2,15 @@
 
 import { motion } from "framer-motion";
 import { Play, MessageCircle, ChevronRight } from "lucide-react";
-import { WHATSAPP_BASE_URL } from "@/lib/constants";
 import ParticleBackground from "./ParticleBackground";
 import PromoBanner from "./PromoBanner";
-import Link from "next/link";
+import SectionLink from "./SectionLink";
 
 export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative h-[104vh] min-h-[810px] sm:min-h-[600px] md:min-h-[700px] flex flex-col overflow-hidden"
+      className="relative h-[104vh] min-h-[640px] flex flex-col overflow-hidden"
     >
       {/* ── Deep premium gradient background ── */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0a0118] via-[#1a0a3e] to-[#0c1445]" />
@@ -82,7 +81,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.18 }}
-          className="text-base sm:text-lg text-gray-300/90 max-w-3xl mb-3 whitespace-wrap"
+          className="text-base sm:text-lg text-gray-300/90 max-w-3xl mb-3 px-2 sm:px-0 sm:whitespace-nowrap"
         >
            IPTV Subscription and Login in 60 Seconds — No waiting. No contracts. No dish.
         </motion.p>
@@ -104,26 +103,22 @@ export default function HeroSection() {
           transition={{ duration: 0.7, delay: 0.35 }}
           className="mt-10 sm:mt-12 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4"
         >
-          <Link
-            href="#pricing"
-            aria-label="View IPTV subscription plans from £4.99"
-            className="group relative flex items-center gap-2.5 rounded-2xl bg-gradient-to-r from-violet-600 via-purple-600 to-cyan-500 px-7 py-3.5 text-sm sm:text-base font-semibold text-white shadow-lg shadow-purple-900/40 transition-all hover:shadow-2xl hover:shadow-purple-500/40 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white w-full sm:w-auto justify-center"
+          <SectionLink
+            href="/#pricing"
+            className="group relative flex items-center gap-2.5 rounded-2xl bg-gradient-to-r from-violet-600 via-purple-600 to-cyan-500 px-7 py-3.5 text-sm sm:text-base font-semibold text-white shadow-lg shadow-purple-900/40 transition-all hover:shadow-2xl hover:shadow-purple-500/40 active:scale-[0.98] w-full sm:w-auto justify-center"
           >
-            <Play className="h-5 w-5 fill-current" aria-hidden="true" />
-            <span>Buy IPTV Now — From £4.99</span>
-            <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
-            <div aria-hidden="true" className="absolute inset-0 rounded-2xl bg-white/10 opacity-0 transition-opacity group-hover:opacity-100" />
-          </Link>
-          <a
-            href={`${WHATSAPP_BASE_URL}?text=${encodeURIComponent("Hello Premium IPTV, I'd like to subscribe!")}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Chat with UK support on WhatsApp (opens in a new tab)"
-            className="group flex items-center gap-2.5 rounded-2xl border border-white/20 bg-white/[0.08] backdrop-blur-sm px-7 py-3.5 text-sm sm:text-base font-semibold text-white transition-all hover:border-purple-400/40 hover:bg-white/15 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white w-full sm:w-auto justify-center"
+            <Play className="h-5 w-5 fill-current" />
+            <span>Buy IPTV Now — Starting at £12.99/month</span>
+            <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+            <div className="absolute inset-0 rounded-2xl bg-white/10 opacity-0 transition-opacity group-hover:opacity-100" />
+          </SectionLink>
+          <SectionLink
+            href="/#pricing"
+            className="group flex items-center gap-2.5 rounded-2xl border border-white/15 bg-white/[0.06] backdrop-blur-sm px-7 py-3.5 text-sm sm:text-base font-semibold text-white transition-all hover:border-purple-400/30 hover:bg-white/10 w-full sm:w-auto justify-center"
           >
-            <MessageCircle className="h-5 w-5 text-cyan-300" aria-hidden="true" />
-            <span>Chat on WhatsApp</span>
-          </a>
+            <MessageCircle className="h-5 w-5 text-cyan-400" />
+            <span>See All Plans</span>
+          </SectionLink>
         </motion.div>
       </div>
 
