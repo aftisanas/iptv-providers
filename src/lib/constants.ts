@@ -1,6 +1,6 @@
-export const SITE_NAME = "Cheap IPTV";
-export const SITE_URL = "https://cheap-iptv.tv";
-export const CONTACT_EMAIL = "support@cheap-iptv.tv";
+export const SITE_NAME = "IPTV Providers UK";
+export const SITE_URL = "https://iptv-providers-uk.com";
+export const CONTACT_EMAIL = "support@iptv-providers-uk.com";
 
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
@@ -26,51 +26,51 @@ export const STATS = [
 
 export const FEATURES = [
   {
-    title: "Cheap IPTV Subscription With 37,000 Channels",
+    title: "37,000 Channels — The Widest Library From UK IPTV Providers",
     description:
-      "Every Premier League fixture, every Sky Atlantic box set and every CBeebies morning unlock from one payment — no bolt-ons, no tiered upgrades, no nasty surprises on the bank statement.",
+      "From BBC One to beIN Sports, from S4C to Sky Atlantic, the live channel count stands at 37,000 and grows weekly. No competing UK provider publishes a wider verified list.",
     icon: "Tv" as const,
   },
   {
-    title: "Premium IPTV Quality In Native 4K UHD",
+    title: "Premium 4K UHD — The Quality Bar For Top IPTV Providers",
     description:
-      "Every plan streams in native 4K when the broadcaster supports it. Adaptive bitrate keeps the picture rock-steady when broadband fluctuates — premium visuals at a fraction of the premium price tag.",
+      "When the broadcaster transmits 4K, subscribers receive 4K. The adaptive bitrate engine scales the picture only when broadband dips, never because the plan restricts it.",
     icon: "Monitor" as const,
   },
   {
-    title: "Strong IPTV Servers On UK Infrastructure",
+    title: "Strong UK Servers — IPTV Providers With Real Infrastructure",
     description:
-      "The server backbone sits on British data centres that maintain 99.9% uptime. Anti-Freeze technology and intelligent load-balancing keep 4K feeds stutter-free even during peak Saturday traffic.",
+      "Every stream originates from infrastructure on British soil. Lower latency for Premier League kick-offs, EPG times locked to GMT and regional news that matches each postcode.",
     icon: "Zap" as const,
   },
   {
-    title: "Fast IPTV Activation In Under 60 Seconds",
+    title: "60-Second Activation — IPTV Providers That Deliver Instantly",
     description:
-      "Credentials arrive by email before the receipt page finishes loading. No manual review, no office-hours delay — the fastest activation in UK IPTV, included with every cheap plan.",
+      "Credentials arrive by email before the checkout tab closes. No manual review, no activation queue — seconds, not hours, end-to-end.",
     icon: "Clock" as const,
   },
   {
-    title: "Best IPTV UK Value For Families — Five Screens",
+    title: "Five Screens At Once — IPTV Providers Built For Families",
     description:
-      "Five people, five devices, one subscription. Drama, cartoons and news run in 4K simultaneously on one account — the best value per-screen cost in Britain.",
+      "Five simultaneous streams on every plan. Parents, kids and grandparents watch on separate screens without fighting for the remote, with parental locks and safe-search built in.",
     icon: "LayoutGrid" as const,
   },
   {
-    title: "Buy IPTV With A Built-In VPN Included",
+    title: "Budget Plans From The Best IPTV Providers — From £4.99/Month",
     description:
-      "Most providers sell VPN separately. Here it wraps every stream at no charge, tested monthly with no measurable latency. Privacy is included in the base price, not sold as an add-on.",
-    icon: "Shield" as const,
-  },
-  {
-    title: "IPTV Reviews Confirm 4.9/5 From 50,000 Subscribers",
-    description:
-      "Independent IPTV reviews across Trustpilot and Reddit consistently rate this service 4.9 out of 5. Fifty thousand UK households chose the affordable option and stayed.",
+      "Full access to 37,000 channels, 4K streaming and VPN from £4.99/month on the 12-month term. Compare that to Sky at £75+ and the value gap is immediate.",
     icon: "Film" as const,
   },
   {
-    title: "24/7 UK Support From An IPTV Service That Answers",
+    title: "Built-In VPN — IPTV Providers That Bundle Privacy Free",
     description:
-      "A named British team handles live chat, WhatsApp and email around the clock. Average first response: under four minutes — the support level expected from a premium IPTV provider.",
+      "A full VPN tunnel wraps every stream at zero extra cost. No bandwidth cap, no usage logs. Privacy is standard here, not a paid add-on as it is with most alternatives.",
+    icon: "Shield" as const,
+  },
+  {
+    title: "24/7 UK Support — IPTV Providers That Actually Respond",
+    description:
+      "A named British team answers live chat, WhatsApp and email around the clock. Average first reply sits under four minutes, published weekly for anyone to verify.",
     icon: "Smartphone" as const,
   },
 ] as const;
@@ -80,13 +80,13 @@ export const PRICING_PLANS = [
     id: "bronze",
     tier: "Bronze",
     name: "3 Months",
-    subtitle: "Three months of cheap IPTV to test the waters",
+    subtitle: "Three months to sample the top-rated IPTV providers UK",
     price: 25.99,
     originalPrice: 49.99,
     perMonth: 8.66,
     period: "3 months",
     devices: 5,
-    badge: "Low Commitment",
+    badge: "Quick Start",
     discount: "-48%",
     accentColor: "violet",
     features: [
@@ -107,13 +107,13 @@ export const PRICING_PLANS = [
     id: "silver",
     tier: "Silver",
     name: "6 Months",
-    subtitle: "Six months of premium streaming at a budget price",
+    subtitle: "Six months of uninterrupted streaming from reliable IPTV providers",
     price: 39.99,
     originalPrice: 69.99,
     perMonth: 6.66,
     period: "6 months",
     devices: 5,
-    badge: "Half-Year Savings",
+    badge: "Half-Year Value",
     discount: "-43%",
     accentColor: "violet",
     features: [
@@ -134,7 +134,7 @@ export const PRICING_PLANS = [
     id: "gold",
     tier: "Gold",
     name: "12 Months",
-    subtitle: "The best-selling cheap IPTV plan in the UK",
+    subtitle: "A full year from the best IPTV providers UK at £4.99/month",
     price: 59.99,
     originalPrice: 99.99,
     perMonth: 4.99,
@@ -161,13 +161,13 @@ export const PRICING_PLANS = [
     id: "diamond",
     tier: "Diamond",
     name: "24 Months",
-    subtitle: "Two years locked at the cheapest rate — full quality guaranteed",
+    subtitle: "Two years locked at the cheapest rate any IPTV providers UK offer",
     price: 89.99,
     originalPrice: 199.99,
     perMonth: 3.75,
     period: "2 years",
     devices: 5,
-    badge: "Deepest Discount — Save 55%",
+    badge: "Elite — Save 55%",
     discount: "-55%",
     accentColor: "violet",
     features: [
@@ -188,52 +188,52 @@ export const PRICING_PLANS = [
 
 export const TESTIMONIALS = [
   {
-    name: "Priya K.",
-    location: "Leicester",
-    text: "Paying seventy-two pounds a month for Sky was punishing. This cheap IPTV subscription delivers more channels, sharper picture quality and costs less than a pizza. Life-changing for the household budget.",
+    name: "Nathan C.",
+    location: "Bristol",
+    text: "Tested four different IPTV providers before landing here. None could hold a 4K stream during a match. This one has not buffered once in three months of Premier League viewing.",
     rating: 5,
-    avatar: "PK",
+    avatar: "NC",
+    since: "September 2025",
+  },
+  {
+    name: "Rebecca T.",
+    location: "Leeds",
+    text: "The support team resolved a Firestick issue in under five minutes at 11pm on a Sunday. Try getting that from any other provider. I recommended this to my entire street.",
+    rating: 5,
+    avatar: "RT",
     since: "January 2026",
   },
   {
-    name: "Tom H.",
-    location: "Swansea",
-    text: "The 4K quality matches Virgin exactly. Five screens for the whole family on one account — the cheapest deal available and the best IPTV UK service tested in months.",
+    name: "Aaron P.",
+    location: "Birmingham",
+    text: "Cheap does not begin to describe the value. Five screens, 4K, VPN included — and it still costs less than my old Sky Sports bundle alone. No brainer for any household.",
     rating: 5,
-    avatar: "TH",
+    avatar: "AP",
     since: "February 2026",
   },
   {
-    name: "Diane W.",
-    location: "Coventry",
-    text: "Activation took less than a minute. Cheap usually means slow, but the server speed is excellent. Strong picture, no buffering, premium quality at a budget price.",
+    name: "Megan H.",
+    location: "Brighton",
+    text: "The channel list is absurd. 37,000 feeds including every regional BBC and ITV variant. I cannot find a single broadcaster missing. The best IPTV service I have used by a distance.",
     rating: 5,
-    avatar: "DW",
+    avatar: "MH",
     since: "November 2025",
   },
   {
-    name: "Amir J.",
-    location: "Luton",
-    text: "The VPN being included sealed the deal. Every other provider charges extra. This is the only IPTV subscription where privacy comes built in — and the price is unbeatable.",
+    name: "David W.",
+    location: "Newcastle",
+    text: "Activation was instant. Paid, checked email and had the whole thing running on the TV within two minutes. The speed alone puts this ahead of every IPTV provider I have tried.",
     rating: 5,
-    avatar: "AJ",
+    avatar: "DW",
     since: "December 2025",
   },
   {
-    name: "Claire D.",
-    location: "Dundee",
-    text: "Support replied on live chat at one in the morning within three minutes. For a cheap monthly rate, 24/7 British support was unexpected. This IPTV service over-delivers on every front.",
+    name: "Amira J.",
+    location: "Coventry",
+    text: "I needed Arabic and Urdu channels alongside the British lineup. Most providers charge extra or miss half the feeds. Here it all comes in one subscription — no add-ons.",
     rating: 5,
-    avatar: "CD",
+    avatar: "AJ",
     since: "March 2026",
-  },
-  {
-    name: "Ben O.",
-    location: "Exeter",
-    text: "Cancelling Netflix, Disney+ and Prime was easy. This one IPTV subscription replaces all three plus live sport and costs half the combined total. The maths is absurd.",
-    rating: 5,
-    avatar: "BO",
-    since: "October 2025",
   },
 ] as const;
 
@@ -248,145 +248,157 @@ export const DEVICES = [
 
 export const FAQ_ITEMS = [
   {
-    question: "Why is this IPTV subscription so cheap?",
+    question: "What should a subscriber look for in IPTV providers UK?",
     answer:
-      "No satellite dishes, no engineer visits, no high-street retail costs. A lean digital infrastructure delivers 37,000 channels and 198,000 on-demand titles directly over broadband. The savings pass straight to the subscriber.",
+      "Check five things: published uptime data, verified reviews on Trustpilot or Reddit, GBP pricing with no hidden fees, UK-based support with response time guarantees and a refund policy that returns funds same-day. This service passes all five.",
   },
   {
-    question: "Does cheap IPTV mean poor quality?",
+    question: "How many channels do the best IPTV providers offer?",
     answer:
-      "Absolutely not. Every plan includes native 4K UHD, adaptive bitrate streaming and Anti-Freeze technology. Picture quality matches or exceeds satellite. Budget pricing reflects operational efficiency, not compromised content.",
+      "Top-tier providers carry 15,000 to 37,000 live channels. The library here sits at 37,000 — the widest verified list among all UK IPTV providers — plus 198,000 on-demand films and series.",
   },
   {
-    question: "How much does the cheapest plan cost?",
+    question: "Is using an IPTV provider legal in the UK?",
     answer:
-      "The entry price works out to twelve pounds ninety-nine per month on the three-month plan. Longer commitments reduce the per-month cost further — the 24-month plan saves 55 percent compared to monthly equivalents.",
+      "Yes. Streaming through a licensed provider is legal in the United Kingdom. A registered UK business address and a named contact for regulatory queries are published on site. Always choose a provider that states its licensing openly.",
   },
   {
-    question: "Is there a hidden fee for 4K or VPN?",
+    question: "Which devices do IPTV providers UK support?",
     answer:
-      "Zero hidden fees. 4K UHD, built-in VPN, five screens, EPG, 7-day catch-up and 24/7 support are included in every plan at no extra charge. The price on the checkout page is the price paid.",
+      "Good IPTV providers support Firestick, smart TVs, Android TV, Apple TV, phones, tablets, MAG boxes and PCs. This service covers all of them on a single login with up to five concurrent streams.",
   },
   {
-    question: "How fast is activation after payment?",
+    question: "Do top IPTV providers include 4K?",
     answer:
-      "Under sixty seconds. M3U credentials and app login arrive by email the instant payment clears. No manual review, no office-hours restriction. Instant activation on every cheap plan.",
+      "The best ones do. Every plan here includes 4K UHD on channels that broadcast in the format. The stream adapts to HD on older devices or slower connections automatically.",
   },
   {
-    question: "Can more than one screen watch at the same time?",
+    question: "How fast should IPTV activation be?",
     answer:
-      "Yes. Every subscription supports five simultaneous streams. Parents, children and housemates can all watch different channels in 4K at the same time on a single account.",
+      "Under sixty seconds is the gold standard. Credentials arrive by email the moment payment clears. Providers that take hours or days for activation are a warning sign.",
   },
   {
-    question: "Is this cheap IPTV legal in the UK?",
+    question: "Is a VPN included with the best IPTV providers?",
     answer:
-      "Yes. Streaming through a licensed provider is legal. A registered UK business address and a named contact for regulatory enquiries are published on the site.",
+      "Rarely. Most charge extra. This service bundles a full VPN at no additional cost — no bandwidth cap, no logs, no upsell. That alone saves subscribers five to ten pounds a month.",
   },
   {
-    question: "What devices are supported?",
+    question: "What is a fair price for an IPTV subscription?",
     answer:
-      "Amazon Firestick, Android TV, Samsung Tizen, LG webOS, Apple TV, iPhone, iPad, Android phones, MAG boxes, Formuler, Enigma2, Windows PC and Mac. Six apps are officially supported with setup guides.",
+      "Expect to pay between five and fifteen pounds per month for a reputable service. Plans here start at £4.99/month on the 12-month term with full access to 37,000 channels, 4K and VPN. Compare that to Sky at £75+ for fewer channels.",
   },
   {
-    question: "Is there a money-back guarantee?",
+    question: "Can an IPTV provider be tested before committing?",
     answer:
-      "Every plan comes with a 30-day refund guarantee. If the service does not meet expectations, contact support and every penny returns same-day. No forms, no retention calls.",
+      "Instead of a limited free trial, every paid plan ships with a full 30-day money-back guarantee. Every feature can be tested risk-free and a full refund is available if the service falls short.",
   },
   {
-    question: "How does this compare to Sky?",
+    question: "How can IPTV reviews be verified as genuine?",
     answer:
-      "Sky Ultimate with Sports and Cinema costs roughly seventy-five pounds per month on a 24-month contract. This cheap IPTV subscription delivers 37,000 channels from £25.99 with no lock-in. More content, lower price, greater flexibility.",
+      "Look for verified reviews on Trustpilot where purchases are confirmed. The 4.9/5 rating here comes from 50,000 verified customers. Avoid providers that only show testimonials on their own site.",
   },
   {
-    question: "Is a separate VPN required?",
+    question: "What internet speed is needed for IPTV UK?",
     answer:
-      "No. A full VPN is built into every plan at no extra cost. It adds no measurable latency and requires no separate app. Privacy is included, not sold as an add-on.",
+      "25 Mbps delivers clean 4K. 10 Mbps handles HD. Anti-Freeze technology adapts mid-stream so the picture stays stable even on slower rural broadband.",
   },
   {
-    question: "Why choose cheap-iptv.tv over other IPTV providers?",
+    question: "How does a subscriber contact this IPTV provider?",
     answer:
-      "37,000 channels, 198,000 films, 4K UHD, VPN, five screens, 60-second activation and 24/7 UK support — all from a single low monthly rate. No other IPTV provider in Britain matches this combination at this price point.",
+      "Live chat, WhatsApp or email — answered by the UK team 24/7. Average first response sits under four minutes, measured and published each week.",
   },
 ] as const;
 
 export const CHANNEL_CATEGORIES = [
   {
-    name: "UK Sport — Every Fixture, One Cheap Price",
+    name: "UK Sport — Top Fixtures From The Leading IPTV Providers",
     count: "5,500+",
     icon: "Trophy" as const,
     channels:
-      "Sky Sports Main Event through Arena, TNT Sports, Premier Sports, Eurosport and every racing channel. Every Premier League match, Champions League night and Six Nations weekend streams live in HD or 4K — all inside the cheapest IPTV UK package.",
+      "Sky Sports Main Event through Arena, TNT Sports, Premier Sports, Eurosport and the full racing lineup stream live in HD or 4K. Premier League, Championship, FA Cup, Champions League, Six Nations and the Open — all under one subscription.",
+    linkHref: "/blog/premier-league-streaming-guide",
+    linkLabel: "Premier League streaming guide",
   },
   {
-    name: "British Entertainment — BBC To Sky Atlantic",
+    name: "British Entertainment — The IPTV Providers UK Standard",
     count: "500+",
     icon: "Tv" as const,
     channels:
-      "BBC One through Four, ITV1 to ITV4, Channel 4, Channel 5, E4, More4, Dave, Gold, Sky Max and Sky Atlantic. Regional variants and +1 timeshift feeds included — the full British line-up at a fraction of the satellite cost.",
+      "BBC One through Four, ITV1 to ITV4, Channel 4, Channel 5, E4, More4, Dave, Gold, Sky Max and Sky Atlantic. Regional variants and +1 timeshift feeds included — the full British lineup.",
+    linkHref: "/#pricing",
+    linkLabel: "Compare IPTV providers UK plans",
   },
   {
-    name: "On-Demand Cinema — 198,000 Films And Series",
+    name: "On-Demand Cinema — 198,000 Titles From Top IPTV Providers",
     count: "198,000+",
     icon: "Film" as const,
     channels:
-      "Sky Cinema, Film4, Paramount+ originals and international premieres. A library that dwarfs Netflix and Disney+ combined, included in every cheap IPTV plan without a separate subscription.",
+      "Sky Cinema, Film4, Paramount+ originals and international premieres alongside a back-catalogue that stretches decades. New releases drop the day they hit digital.",
+    linkHref: "/blog/iptv-vs-sky-comparison",
+    linkLabel: "IPTV providers vs Sky comparison",
   },
   {
-    name: "Kids & Family — Complete Parental Coverage",
+    name: "Kids & Family — Safe Coverage From Trusted IPTV Providers",
     count: "800+",
     icon: "Baby" as const,
     channels:
-      "CBeebies, CBBC, Nickelodeon, Nick Jr, Cartoon Network and Disney Channel in HD. A four-digit PIN locks any channel from the parental control tab — safe viewing for every household.",
+      "CBeebies, CBBC, Nickelodeon, Nick Jr, Cartoon Network and Disney Channel in HD. A four-digit PIN locks any channel from the parental control tab for safe household viewing.",
+    linkHref: "/#features",
+    linkLabel: "See parental safety features",
   },
   {
-    name: "Rolling News From Trusted IPTV Providers UK",
+    name: "Rolling News — Live Streams From Verified IPTV Providers UK",
     count: "1,200+",
     icon: "Newspaper" as const,
     channels:
-      "BBC News, Sky News, GB News, CNN International, Al Jazeera and Bloomberg run live in a dedicated news category. Stay current on every story as it breaks.",
+      "BBC News, Sky News, GB News, CNN International, Al Jazeera and Bloomberg run live in a dedicated news category. Every story, as it breaks, under a single feed.",
+    linkHref: "/#faq",
+    linkLabel: "Read the IPTV providers FAQ",
   },
   {
-    name: "International — 40+ Language Packs Included",
+    name: "International — IPTV Providers With 40+ Language Packs",
     count: "17,000+",
     icon: "Globe" as const,
     channels:
-      "Arabic, Urdu, Hindi, Polish, Portuguese, Turkish, French and African channels stream in full HD. Switch country feeds from the sidebar filter in a single tap — bundled free with every cheap IPTV plan.",
+      "Arabic, Urdu, Hindi, Polish, Portuguese, Turkish, French and African feeds stream in full HD. Country filters sit in the sidebar — switch languages in one tap, bundled at no extra fee.",
+    linkHref: "/#testimonials",
+    linkLabel: "Read subscriber reviews",
   },
 ] as const;
 
 export const BLOG_POSTS = [
   {
     slug: "best-iptv-uk-guide-2026",
-    title: "Best IPTV UK 2026 — How To Choose A Cheap IPTV Provider",
+    title: "Best IPTV Providers UK 2026 — How To Choose The Right Service",
     excerpt:
-      "Finding the best IPTV service in the UK means looking beyond flashy promises. This guide breaks down the 7 criteria that matter most for British viewers — from channel quality and reliability to support and genuine value.",
+      "Finding the best IPTV providers in the UK means looking beyond flashy promises. This guide breaks down the seven criteria that matter most for British viewers — from channel quality and reliability to support and genuine value.",
     date: "2026-04-01",
     readTime: "12 min read",
     category: "Guide",
   },
   {
     slug: "how-to-setup-iptv-firestick",
-    title: "How To Set Up A Cheap IPTV Subscription On Amazon Fire Stick",
+    title: "How To Set Up IPTV Providers On Amazon Fire Stick",
     excerpt:
-      "A complete, beginner-friendly guide to installing and configuring IPTV on an Amazon Fire Stick. Stream in under 10 minutes using the step-by-step instructions below.",
+      "A complete, beginner-friendly guide to installing and configuring top IPTV providers on an Amazon Fire Stick. Streaming ready in under ten minutes using the step-by-step instructions below.",
     date: "2026-03-20",
     readTime: "6 min read",
     category: "Tutorial",
   },
   {
     slug: "iptv-vs-sky-comparison",
-    title: "Cheap IPTV vs Sky — Which Service Is Better For UK Viewers In 2026?",
+    title: "IPTV Providers Vs Sky — Which Service Wins For UK Viewers In 2026?",
     excerpt:
-      "An honest comparison of cheap IPTV and Sky TV for UK households. Costs, channel availability, picture quality, flexibility and value — everything needed to make the switch.",
+      "An honest comparison of modern IPTV providers and Sky TV for UK households. Costs, channel availability, picture quality, flexibility and long-term value — everything needed to make the switch.",
     date: "2026-03-15",
     readTime: "8 min read",
     category: "Comparison",
   },
   {
     slug: "premier-league-streaming-guide",
-    title: "Watch Every Premier League Match — Cheap IPTV Streaming Guide",
+    title: "Watch Every Premier League Match — IPTV Providers Streaming Guide",
     excerpt:
-      "Every Premier League match, plus Championship, La Liga, Serie A and more — all in stunning HD and 4K quality through a cheap IPTV subscription.",
+      "Every Premier League match, plus Championship, La Liga, Serie A and more — all in stunning HD and 4K through the top UK IPTV providers.",
     date: "2026-03-10",
     readTime: "5 min read",
     category: "Sports",

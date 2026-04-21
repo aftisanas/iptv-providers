@@ -138,10 +138,10 @@ export default function BlogPostContent({ post, content }: BlogPostContentProps)
             className="mt-16 rounded-2xl border border-primary/15 bg-blue-50 p-8 text-center"
           >
             <h3 className="text-xl font-bold text-foreground mb-3">
-              Ready to Start Streaming?
+              Ready To Choose From The Top IPTV Providers UK?
             </h3>
             <p className="text-muted mb-6">
-              Get started with Premium IPTV today. Plans from £4.99 with a 30-day money-back guarantee.
+              Start with the #1 rated UK IPTV provider. Plans from £4.99/month with a 30-day money-back guarantee.
             </p>
             <SectionLink
               href="/#pricing"

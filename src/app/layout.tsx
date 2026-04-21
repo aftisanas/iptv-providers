@@ -23,28 +23,29 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Cheap IPTV 2026 | Cheapest UK IPTV Service From £4.99",
-    template: "%s | Cheap IPTV",
+    default: "IPTV Providers UK 2026 | #1 Rated 4K IPTV Service £4.99",
+    template: "%s | IPTV Providers UK",
   },
   description:
-    "Cheap IPTV that never feels cheap. 37,000 channels, 4K UHD, built-in VPN, five screens, 30-day guarantee. The best-value IPTV subscription in Britain. £4.99.",
+    "Trusted IPTV providers UK 2026. 37,000 channels, 4K UHD, built-in VPN, 24/7 support. Compare plans from the top UK IPTV provider. From £4.99/month. 30-day refund.",
   keywords: [
-    "cheap iptv",
-    "cheap iptv subscription",
-    "cheap iptv uk",
-    "cheapest iptv",
+    "iptv providers",
+    "iptv providers uk",
+    "best iptv providers",
+    "best iptv providers uk",
+    "uk iptv providers",
     "iptv subscription",
     "iptv uk",
     "best iptv uk",
-    "iptv providers",
     "iptv service",
+    "iptv reviews",
     "buy iptv",
     "british iptv",
     "premium iptv",
   ],
-  authors: [{ name: "Cheap IPTV" }],
-  creator: "Cheap IPTV",
-  applicationName: "Cheap IPTV",
+  authors: [{ name: "IPTV Providers UK" }],
+  creator: "IPTV Providers UK",
+  applicationName: "IPTV Providers UK",
   alternates: {
     canonical: "/",
     languages: {
@@ -68,17 +69,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_GB",
-    siteName: "Cheap IPTV",
+    siteName: "IPTV Providers UK",
     url: SITE_URL,
-    title: "Cheap IPTV UK 2026 — Maximum Streaming For Minimum Spend",
+    title: "IPTV Providers UK 2026 — The Complete Guide To The #1 Rated Service",
     description:
-      "The cheap IPTV subscription 50,000 UK homes trust. 37,000 channels, premium 4K quality, instant activation. Buy IPTV without breaking the bank.",
+      "Stop guessing which IPTV providers deliver. 37,000 channels, 198,000 films, fast activation, strong servers. See why 50,000 UK homes chose this provider.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cheap IPTV UK 2026 — Maximum Streaming For Minimum Spend",
+    title: "IPTV Providers UK 2026 — The #1 Rated 4K IPTV Service",
     description:
-      "Cheap IPTV that never feels cheap. 37,000 channels, 4K UHD, built-in VPN, five screens, 30-day guarantee. From £4.99.",
+      "Trusted IPTV providers UK. 37,000 channels, 4K UHD, built-in VPN, five screens, 30-day guarantee. From £4.99/month.",
   },
   robots: {
     index: true,

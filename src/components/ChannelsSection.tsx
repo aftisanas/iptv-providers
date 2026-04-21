@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Tv, Trophy, Film, Baby, Newspaper, Globe } from "lucide-react";
+import { Tv, Trophy, Film, Baby, Newspaper, Globe, ArrowRight } from "lucide-react";
 import SectionLink from "./SectionLink";
 import { CHANNEL_CATEGORIES } from "@/lib/constants";
 
@@ -20,18 +20,17 @@ export default function ChannelsSection() {
           className="text-center mb-16"
         >
           <span className="inline-block rounded-full bg-violet-50 border border-violet-200 px-4 py-1.5 text-sm font-medium text-violet-700 mb-4">
-            Budget Pricing, Premium Library
+            37,000 Live Channels
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            What 37,000 Channels Look Like Inside A{" "}
-            <span className="gradient-text">Cheap IPTV Subscription</span>
+            What Subscribers Get From The Top{" "}
+            <span className="gradient-text">IPTV Providers UK — 37,000 Channels</span>
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-muted">
-            A single{" "}
+            The channel lineup separates serious IPTV providers from the rest. Every category below ships with every{" "}
             <SectionLink href="/#pricing" className="text-violet-600 hover:text-violet-700 underline-offset-2 hover:underline">
-              cheap IPTV UK plan
-            </SectionLink>{" "}
-            opens every category below at once — no add-ons, no bolt-ons, no hidden fees.
+              IPTV subscription
+            </SectionLink>{" "}— no add-ons, no bolt-ons, no hidden fees.
           </p>
         </motion.div>
 
@@ -45,11 +44,11 @@ export default function ChannelsSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.05 }}
-                className="group relative overflow-hidden rounded-2xl border border-violet-100/60 bg-white p-6 transition-all duration-500 hover:border-violet-200 hover:shadow-lg hover:shadow-violet-100/40 premium-card"
+                className="group relative overflow-hidden rounded-2xl border border-violet-100/60 bg-white p-6 transition-all duration-500 hover:border-violet-200 hover:shadow-lg hover:shadow-violet-100/40 premium-card flex flex-col"
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-violet-50 to-transparent rounded-bl-full opacity-0 transition-opacity group-hover:opacity-100" />
 
-                <div className="relative">
+                <div className="relative flex flex-col flex-1">
                   <div className="flex items-center gap-4 mb-3">
                     <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-violet-100 to-cyan-50 transition-all group-hover:from-violet-200/80 group-hover:to-cyan-100/50">
                       <Icon className="h-6 w-6 text-violet-600" />
@@ -59,9 +58,16 @@ export default function ChannelsSection() {
                       <p className="text-2xl font-bold gradient-text">{cat.count}</p>
                     </div>
                   </div>
-                  <p className="text-sm text-muted leading-relaxed">
+                  <p className="text-sm text-muted leading-relaxed mb-4">
                     {cat.channels}
                   </p>
+                  <SectionLink
+                    href={cat.linkHref}
+                    className="mt-auto inline-flex items-center gap-1.5 text-sm font-medium text-violet-600 transition-all hover:text-violet-700 group-hover:gap-2"
+                  >
+                    {cat.linkLabel}
+                    <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+                  </SectionLink>
                 </div>
               </motion.div>
             );

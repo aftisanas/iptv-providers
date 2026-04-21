@@ -23,15 +23,14 @@ export default function DevicesSection() {
             Runs Everywhere
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Cheap IPTV On Every Screen &mdash;{" "}
-            <span className="gradient-text">The IPTV Service That Runs Everywhere</span>
+            This IPTV Provider Works On{" "}
+            <span className="gradient-text">Every Device Already In The Home</span>
           </h2>
           <p className="mx-auto max-w-xl text-lg text-muted">
-            One budget-friendly{" "}
+            One{" "}
             <SectionLink href="/#pricing" className="text-violet-600 hover:text-violet-700 underline-offset-2 hover:underline">
               IPTV subscription
-            </SectionLink>{" "}
-            powers every device in the household. No extra hardware, no add-on fees, no paid app purchases required.
+            </SectionLink>, five concurrent streams, zero extra hardware. Device support wider than most IPTV providers even advertise.
           </p>
         </motion.div>
 

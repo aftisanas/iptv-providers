@@ -26,17 +26,17 @@ export default function FeaturesSection() {
           className="text-center lg:mb-12 mb-10"
         >
           <span className="inline-block rounded-full bg-violet-50 border border-violet-200 px-4 py-1.5 text-sm font-medium text-violet-700 mb-4">
-            Budget Pricing, Premium Features
+            Eight Measured Pillars
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Eight Reasons This Cheap IPTV Subscription{" "}
-            <span className="gradient-text">Outperforms Services Costing Three Times More</span>
+            Eight Reasons UK Viewers Rate Us{" "}
+            <span className="gradient-text">The Top IPTV Provider</span>
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-muted">
-            Budget pricing does not mean budget quality. Every card below covers a feature that costs extra elsewhere — included here at no additional charge with every{" "}
+            Most IPTV providers list features without evidence. Every one of the eight pillars below is measured, published and guaranteed — and if any falls short, the 30-day refund on every{" "}
             <SectionLink href="/#pricing" className="text-violet-600 hover:text-violet-700 underline-offset-2 hover:underline">
-              cheap IPTV subscription
-            </SectionLink>.
+              IPTV subscription
+            </SectionLink>{" "}covers the subscriber in full.
           </p>
         </motion.div>
 
