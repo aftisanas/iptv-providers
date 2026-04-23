@@ -29,7 +29,7 @@ export default function FeaturesSection() {
             Eight Measured Pillars
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Eight Reasons UK Viewers Rate Us{" "}
+            Eight Reasons IPTV UK Viewers Rate Us{" "}
             <span className="gradient-text">The Top IPTV Provider</span>
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-muted">

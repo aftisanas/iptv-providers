@@ -28,7 +28,7 @@ export const FEATURES = [
   {
     title: "37,000 Channels — The Widest Library From UK IPTV Providers",
     description:
-      "From BBC One to beIN Sports, from S4C to Sky Atlantic, the live channel count stands at 37,000 and grows weekly. No competing UK provider publishes a wider verified list.",
+      "Live channel count stands at +37,000 and grows weekly. No competing UK provider publishes a wider verified list.",
     icon: "Tv" as const,
   },
   {
@@ -258,11 +258,6 @@ export const FAQ_ITEMS = [
       "Top-tier providers carry 15,000 to 37,000 live channels. The library here sits at 37,000 — the widest verified list among all UK IPTV providers — plus 198,000 on-demand films and series.",
   },
   {
-    question: "Is using an IPTV provider legal in the UK?",
-    answer:
-      "Yes. Streaming through a licensed provider is legal in the United Kingdom. A registered UK business address and a named contact for regulatory queries are published on site. Always choose a provider that states its licensing openly.",
-  },
-  {
     question: "Which devices do IPTV providers UK support?",
     answer:
       "Good IPTV providers support Firestick, smart TVs, Android TV, Apple TV, phones, tablets, MAG boxes and PCs. This service covers all of them on a single login with up to five concurrent streams.",
@@ -315,7 +310,7 @@ export const CHANNEL_CATEGORIES = [
     count: "5,500+",
     icon: "Trophy" as const,
     channels:
-      "Sky Sports Main Event through Arena, TNT Sports, Premier Sports, Eurosport and the full racing lineup stream live in HD or 4K. Premier League, Championship, FA Cup, Champions League, Six Nations and the Open — all under one subscription.",
+      "Every major UK sports network streams live in HD or 4K, with full coverage of domestic leagues, cup fixtures, European competitions, international tournaments and premium racing — all the big matches and marquee events under one subscription, with nothing held back behind extra add-ons.",
     linkHref: "/blog/premier-league-streaming-guide",
     linkLabel: "Premier League streaming guide",
   },
@@ -324,7 +319,7 @@ export const CHANNEL_CATEGORIES = [
     count: "500+",
     icon: "Tv" as const,
     channels:
-      "BBC One through Four, ITV1 to ITV4, Channel 4, Channel 5, E4, More4, Dave, Gold, Sky Max and Sky Atlantic. Regional variants and +1 timeshift feeds included — the full British lineup.",
+      "Every flagship British broadcaster is in the lineup, covering drama, comedy, reality, lifestyle and primetime entertainment. Regional variants and +1 timeshift feeds are bundled as standard — the full UK viewing experience on one subscription.",
     linkHref: "/#pricing",
     linkLabel: "Compare IPTV providers UK plans",
   },
@@ -333,7 +328,7 @@ export const CHANNEL_CATEGORIES = [
     count: "198,000+",
     icon: "Film" as const,
     channels:
-      "Sky Cinema, Film4, Paramount+ originals and international premieres alongside a back-catalogue that stretches decades. New releases drop the day they hit digital.",
+      "A vast on-demand library covering the latest blockbusters, award winners, original series and international premieres, backed by a back-catalogue that stretches decades. New releases land the day they hit digital — ready to stream whenever it suits.",
     linkHref: "/blog/iptv-vs-sky-comparison",
     linkLabel: "IPTV providers vs Sky comparison",
   },
@@ -342,7 +337,7 @@ export const CHANNEL_CATEGORIES = [
     count: "800+",
     icon: "Baby" as const,
     channels:
-      "CBeebies, CBBC, Nickelodeon, Nick Jr, Cartoon Network and Disney Channel in HD. A four-digit PIN locks any channel from the parental control tab for safe household viewing.",
+      "A full range of trusted kids and family channels streams in HD, covering every age group from toddlers to teens with cartoons, shows and family films. A four-digit PIN locks any channel from the parental control tab for safe household viewing.",
     linkHref: "/#features",
     linkLabel: "See parental safety features",
   },
@@ -351,7 +346,7 @@ export const CHANNEL_CATEGORIES = [
     count: "1,200+",
     icon: "Newspaper" as const,
     channels:
-      "BBC News, Sky News, GB News, CNN International, Al Jazeera and Bloomberg run live in a dedicated news category. Every story, as it breaks, under a single feed.",
+      "Every major UK and international news network runs live in a dedicated news category, spanning rolling coverage, business, world affairs and regional bulletins. Every story, as it breaks, under a single feed — 24/7, from any perspective.",
     linkHref: "/#faq",
     linkLabel: "Read the IPTV providers FAQ",
   },
@@ -360,7 +355,7 @@ export const CHANNEL_CATEGORIES = [
     count: "17,000+",
     icon: "Globe" as const,
     channels:
-      "Arabic, Urdu, Hindi, Polish, Portuguese, Turkish, French and African feeds stream in full HD. Country filters sit in the sidebar — switch languages in one tap, bundled at no extra fee.",
+      "More than 40 international language packs stream in full HD, covering every major region and community served across the UK. Country filters sit in the sidebar — switch languages in one tap, all bundled at no extra fee.",
     linkHref: "/#testimonials",
     linkLabel: "Read subscriber reviews",
   },
