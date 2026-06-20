@@ -7,25 +7,25 @@ import Link from "next/link";
 const trustItems = [
   {
     icon: Shield,
-    title: "30-Day Money-Back — The IPTV Providers UK Trust Standard",
+    title: "30-Day Money-Back Guarantee",
     description:
       "Not satisfied? Contact support within 30 days and every penny returns same-day. No forms, no retention calls, no fine print — the refund policy the industry should adopt but rarely does.",
   },
   {
     icon: Wifi,
-    title: "99.9% Uptime — IPTV Providers On Publicly Verified Servers",
+    title: "99.9% Uptime, Publicly Verified",
     description:
       "A live status page tracks server performance minute by minute. If uptime dips below 99.9% in any calendar month, service credits apply automatically — transparent infrastructure separates the serious from the unreliable.",
   },
   {
     icon: Lock,
-    title: "Built-In VPN — Premium IPTV Providers Include Privacy Free",
+    title: "Built-In VPN On Every Plan",
     description:
       "The VPN encrypts every stream from the first press of play. No bandwidth cap, no logs, no separate subscription. Most alternatives charge extra; this service bundles it on every plan.",
   },
   {
     icon: ServerCog,
-    title: "24/7 UK Support — IPTV Providers With A Named British Team",
+    title: "24/7 UK Support, Real Human Team",
     description:
       "Live chat, WhatsApp and email are answered around the clock. Published response times let anyone verify the claim before subscribing — the support model the industry should adopt.",
   },
@@ -47,8 +47,8 @@ export default function TrustSection() {
             Four Hard Promises
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            The IPTV Provider Promise &mdash; Four{" "}
-            <span className="gradient-text">Guarantees Other Providers Skip</span>
+            Four Guarantees That Define{" "}
+            <span className="gradient-text">The Best IPTV Providers UK</span>
           </h2>
           <p className="mx-auto max-w-xl text-lg text-muted">
             Claims are cheap. Every commitment below is published, measured and backed by a full{" "}

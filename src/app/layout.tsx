@@ -23,11 +23,11 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "IPTV Providers UK 2026 | #1 Rated 4K IPTV Service £4.99",
+    default: "Best IPTV Providers UK 2026 | 37K Channels From £4.99/mo",
     template: "%s | IPTV Providers UK",
   },
   description:
-    "Trusted IPTV providers UK 2026. 37,000 channels, 4K UHD, built-in VPN, 24/7 support. Compare plans from the top UK IPTV provider. From £4.99/month. 30-day refund.",
+    "Compare the best IPTV providers UK 2026. 37,000 channels in 4K, built-in VPN, instant activation, 30-day money-back guarantee. From £4.99/month.",
   keywords: [
     "iptv providers",
     "iptv providers uk",
@@ -71,15 +71,24 @@ export const metadata: Metadata = {
     locale: "en_GB",
     siteName: "IPTV Providers UK",
     url: SITE_URL,
-    title: "IPTV Providers UK 2026 — The Complete Guide To The #1 Rated Service",
+    title: "Best IPTV Providers UK 2026 — 37K Channels, 4K, £4.99/mo",
     description:
-      "Stop guessing which IPTV providers deliver. 37,000 channels, 198,000 films, fast activation, strong servers. See why 50,000 UK homes chose this provider.",
+      "Compare the best IPTV providers UK 2026. 37,000 channels, 198,000 films, 4K UHD, built-in VPN and instant activation. From £4.99/month with a 30-day refund.",
+    images: [
+      {
+        url: "/iptv-providers-uk-og.webp",
+        width: 1200,
+        height: 630,
+        alt: "IPTV Providers UK — The #1 Rated 4K IPTV Service",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "IPTV Providers UK 2026 — The #1 Rated 4K IPTV Service",
+    title: "Best IPTV Providers UK 2026 — 37K Channels, 4K, £4.99/mo",
     description:
-      "Trusted IPTV providers UK. 37,000 channels, 4K UHD, built-in VPN, five screens, 30-day guarantee. From £4.99/month.",
+      "Compare the best IPTV providers UK. 37,000 channels, 4K UHD, built-in VPN, five screens, 30-day guarantee. From £4.99/month.",
+    images: ["/iptv-providers-uk-og.webp"],
   },
   robots: {
     index: true,

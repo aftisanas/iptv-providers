@@ -83,7 +83,7 @@ export default function HeroSection() {
           transition={{ duration: 0.7, delay: 0.18 }}
           className="text-base sm:text-lg text-gray-300/90 max-w-3xl mb-3 px-2 sm:px-0"
         >
-          37,000 live channels, 198,000 films and 4K UHD streaming — the IPTV service 50,000 UK homes already trust. Rated 4.9/5 across independent IPTV reviews.
+          37,000 live channels, 198,000 films and 4K UHD streaming — the UK IPTV service built for households who want every channel, every match, every device on one subscription. From £4.99/month with a 30-day refund.
         </motion.p>
 
         {/* Promo banner — replaces hero device image */}

@@ -6,10 +6,15 @@ import Link from "next/link";
 import { BLOG_POSTS } from "@/lib/constants";
 
 const categoryColors: Record<string, string> = {
+  "Buyer's Guide": "bg-violet-50 text-violet-700 border border-violet-200",
   Guide: "bg-primary/10 text-primary border border-primary/10",
   Tutorial: "bg-accent/10 text-accent border border-accent/10",
   Comparison: "bg-amber-50 text-amber-700 border border-amber-200",
   Sports: "bg-emerald-50 text-emerald-700 border border-emerald-200",
+  Education: "bg-sky-50 text-sky-700 border border-sky-200",
+  Trust: "bg-rose-50 text-rose-700 border border-rose-200",
+  Devices: "bg-indigo-50 text-indigo-700 border border-indigo-200",
+  Legal: "bg-slate-50 text-slate-700 border border-slate-200",
 };
 
 export default function BlogContent() {

@@ -5,23 +5,28 @@ import PricingSection from "@/components/PricingSection";
 import DevicesSection from "@/components/DevicesSection";
 import ChannelsSection from "@/components/ChannelsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import FeaturedGuidesSection from "@/components/FeaturedGuidesSection";
 import FAQSection from "@/components/FAQSection";
 import TrustSection from "@/components/TrustSection";
 import CTASection from "@/components/CTASection";
 import {
   CONTACT_EMAIL,
   FAQ_ITEMS,
+  LOGO_URL,
   PRICING_PLANS,
   SITE_NAME,
   SITE_URL,
 } from "@/lib/constants";
+
+// Price validity used in Offer schema — keeps Google Merchant warnings away.
+// Roll forward by 12 months each year.
+const PRICE_VALID_UNTIL = "2027-06-20";
 
 export default function HomePage() {
   const organizationId = `${SITE_URL}/#organization`;
   const websiteId = `${SITE_URL}/#website`;
   const webpageId = `${SITE_URL}/#webpage`;
   const productId = `${SITE_URL}/#product`;
-  const logoUrl = `${SITE_URL}/buy-iptv-uk.webp`;
 
   return (
     <>
@@ -32,6 +37,7 @@ export default function HomePage() {
       <DevicesSection />
       <ChannelsSection />
       <TestimonialsSection />
+      <FeaturedGuidesSection />
       <FAQSection />
       <TrustSection />
       <CTASection />
@@ -50,7 +56,7 @@ export default function HomePage() {
                 url: SITE_URL,
                 logo: {
                   "@type": "ImageObject",
-                  url: logoUrl,
+                  url: LOGO_URL,
                 },
                 contactPoint: {
                   "@type": "ContactPoint",
@@ -74,7 +80,7 @@ export default function HomePage() {
                 "@type": "WebPage",
                 "@id": webpageId,
                 url: SITE_URL,
-                name: "IPTV Providers UK 2026 | #1 Rated 4K IPTV Service £4.99",
+                name: "Best IPTV Providers UK 2026 | 37K Channels From £4.99/mo",
                 inLanguage: "en-GB",
                 isPartOf: {
                   "@id": websiteId,
@@ -83,7 +89,7 @@ export default function HomePage() {
                   "@id": organizationId,
                 },
                 description:
-                  "Trusted IPTV providers UK 2026. 37,000 channels, 4K UHD, built-in VPN, 24/7 support. The top UK IPTV provider — from £4.99/month with a 30-day refund.",
+                  "Compare the best IPTV providers UK 2026. 37,000 channels in 4K, built-in VPN, instant activation, 30-day money-back guarantee. From £4.99/month.",
               },
             ],
           }),
@@ -98,25 +104,20 @@ export default function HomePage() {
             "@id": productId,
             name: `${SITE_NAME} Subscription`,
             url: SITE_URL,
-            image: [logoUrl],
+            image: [LOGO_URL],
             description:
-              "IPTV Providers UK subscription with 37,000+ live channels, 198,000+ on-demand titles, 4K UHD, five screens and a built-in VPN — from £4.99/month on the 12-month term.",
+              "UK IPTV subscription with 37,000+ live channels, 198,000+ on-demand titles, 4K UHD, five simultaneous screens and a built-in VPN — from £4.99/month on the 12-month plan.",
             brand: { "@type": "Brand", name: SITE_NAME },
             offers: PRICING_PLANS.map((plan) => ({
               "@type": "Offer",
               name: `${plan.name} Plan`,
               price: plan.price.toFixed(2),
               priceCurrency: "GBP",
+              priceValidUntil: PRICE_VALID_UNTIL,
               availability: "https://schema.org/InStock",
               itemCondition: "https://schema.org/NewCondition",
               url: `${SITE_URL}/#pricing`,
             })),
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "50000",
-              bestRating: "5",
-            },
           }),
         }}
       />

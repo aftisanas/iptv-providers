@@ -18,18 +18,18 @@ export default function TestimonialsSection() {
           className="text-center mb-16"
         >
           <span className="inline-block rounded-full bg-amber-50 border border-amber-200 px-4 py-1.5 text-sm font-medium text-amber-700 mb-4">
-            Trustpilot Average 4.9/5
+            Real UK Subscriber Feedback
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             What UK Subscribers Say About{" "}
-            <span className="gradient-text">Their IPTV Provider</span>
+            <span className="gradient-text">This Service</span>
           </h2>
           <p className="mx-auto max-w-xl text-lg text-muted">
-            Verified feedback from 50,000 households.{" "}
-            <SectionLink href="/#testimonials" className="text-violet-600 hover:text-violet-700 underline-offset-2 hover:underline">
-              IPTV reviews
+            Subscriber feedback from across the UK.{" "}
+            <SectionLink href="/blog/iptv-providers-reviews-2026" className="text-violet-600 hover:text-violet-700 underline-offset-2 hover:underline">
+              How to verify IPTV reviews
             </SectionLink>{" "}
-            sourced from confirmed purchases on Trustpilot, Reddit and British IPTV forums.
+            covers what genuine subscriber feedback looks like and how to spot the fakes.
           </p>
         </motion.div>
 
@@ -94,10 +94,10 @@ export default function TestimonialsSection() {
           className="mt-12 text-center"
         >
           <SectionLink
-            href="/#testimonials"
+            href="/blog/iptv-providers-reviews-2026"
             className="group inline-flex items-center gap-2 rounded-xl border border-violet-200 bg-white px-6 py-3 text-sm font-medium text-foreground transition-all hover:border-violet-300 hover:bg-violet-50 shadow-sm"
           >
-            Read More Reviews
+            Read Our Reviews Guide
             <span className="transition-transform group-hover:translate-x-1">→</span>
           </SectionLink>
         </motion.div>
