@@ -12,6 +12,34 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ["lucide-react", "framer-motion"],
   },
+  // 301 redirects from the old blog slugs (pre-cluster-rewrite) to their
+  // new cluster equivalents. GSC was logging impressions for the old URLs
+  // (notably /blog/iptv-vs-sky-comparison with 22 impressions in 90 days)
+  // — these 301s preserve every signal Google had built up on those URLs.
+  async redirects() {
+    return [
+      {
+        source: "/blog/best-iptv-uk-guide-2026",
+        destination: "/blog/best-iptv-providers-uk-2026",
+        permanent: true,
+      },
+      {
+        source: "/blog/how-to-setup-iptv-firestick",
+        destination: "/blog/iptv-providers-setup-fire-stick",
+        permanent: true,
+      },
+      {
+        source: "/blog/iptv-vs-sky-comparison",
+        destination: "/blog/iptv-providers-vs-traditional-tv",
+        permanent: true,
+      },
+      {
+        source: "/blog/premier-league-streaming-guide",
+        destination: "/blog/iptv-providers-uk-sport-guide",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {

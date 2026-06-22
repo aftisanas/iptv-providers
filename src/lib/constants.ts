@@ -321,7 +321,7 @@ export const FAQ_ITEMS = [
 // same-page anchor wastage).
 export const CHANNEL_CATEGORIES = [
   {
-    name: "UK Sport — Live In HD And 4K",
+    name: "UK Sport IPTV — Live In HD And 4K",
     count: "5,500+",
     icon: "Trophy" as const,
     channels:
@@ -330,7 +330,7 @@ export const CHANNEL_CATEGORIES = [
     linkLabel: "UK sport on IPTV providers — full guide",
   },
   {
-    name: "British Entertainment And Drama",
+    name: "UK IPTV Entertainment And Drama",
     count: "500+",
     icon: "Tv" as const,
     channels:
@@ -339,7 +339,7 @@ export const CHANNEL_CATEGORIES = [
     linkLabel: "IPTV providers comparison 2026",
   },
   {
-    name: "On-Demand Cinema — 198,000 Titles",
+    name: "IPTV On-Demand Cinema — 198,000 Titles",
     count: "198,000+",
     icon: "Film" as const,
     channels:
@@ -517,4 +517,76 @@ export const BLOG_POSTS = [
     readTime: "7 min read",
     category: "Sports",
   },
-] as const;
+  {
+    slug: "iptv-subscription-uk-2026",
+    title: "IPTV Subscription UK 2026 — Best Plans, Pricing & Value",
+    excerpt:
+      "Complete pricing breakdown of every IPTV subscription tier in the UK, what each plan includes and the £4.99/month sweet spot for households watching most evenings.",
+    date: "2026-06-22",
+    readTime: "9 min read",
+    category: "Pricing",
+  },
+  {
+    slug: "buy-iptv-subscription-uk",
+    title: "Buy IPTV Subscription UK — Safe Purchase Guide 2026",
+    excerpt:
+      "How to buy IPTV subscription UK households can actually trust in 2026. Payment safety, refund verification, instant activation and the 30-day money-back guarantee.",
+    date: "2026-06-22",
+    readTime: "7 min read",
+    category: "Pricing",
+  },
+  {
+    slug: "best-iptv-subscription-uk",
+    title: "Best IPTV Subscription UK 2026 — Top Picks Compared",
+    excerpt:
+      "The best IPTV subscription UK households can buy in 2026. Side-by-side comparison of channel coverage, 4K UHD, support response times and refund policies.",
+    date: "2026-06-22",
+    readTime: "8 min read",
+    category: "Pricing",
+  },
+  {
+    slug: "cheap-iptv-subscription-uk",
+    title: "Cheap IPTV Subscription UK — Affordable Plans From £3.75/month",
+    excerpt:
+      "The cheapest IPTV subscription UK plans worth buying in 2026. What gets cut at low prices, where the real value line sits, and the £3.75/month verified pick.",
+    date: "2026-06-22",
+    readTime: "7 min read",
+    category: "Pricing",
+  },
+  {
+    slug: "best-iptv-service-uk",
+    title: "Best IPTV Service UK 2026 — Top-Rated Services Ranked",
+    excerpt:
+      "Ranking the best IPTV service UK households can subscribe to in 2026. Uptime, channel breadth, sport reliability and support response measured side-by-side.",
+    date: "2026-06-22",
+    readTime: "8 min read",
+    category: "Service",
+  },
+  {
+    slug: "iptv-service-providers-uk",
+    title: "IPTV Service Providers UK 2026 — Top Companies Compared",
+    excerpt:
+      "Complete 2026 ranking of UK IPTV service providers. Licensing, infrastructure, support, pricing and refund policy compared on every credible service.",
+    date: "2026-06-22",
+    readTime: "7 min read",
+    category: "Service",
+  },
+  {
+    slug: "best-iptv-uk-2026",
+    title: "Best IPTV UK 2026 — The Definitive UK Service Ranking",
+    excerpt:
+      "The best IPTV UK ranking for 2026. Top services tested on channels, sport, 4K UHD, uptime, support, refund honesty and value — verified across six weeks of use.",
+    date: "2026-06-22",
+    readTime: "9 min read",
+    category: "Buyer's Guide",
+  },
+  {
+    slug: "iptv-packages-uk",
+    title: "IPTV Packages UK — Compare The Best Plans In 2026",
+    excerpt:
+      "Compare every credible IPTV package UK households can choose from in 2026. What's in each package, monthly cost, channel count, screens and refund terms.",
+    date: "2026-06-22",
+    readTime: "7 min read",
+    category: "Pricing",
+  },
+] 

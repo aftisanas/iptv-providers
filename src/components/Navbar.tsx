@@ -60,7 +60,7 @@ export default function Navbar() {
                 "text-lg font-bold tracking-tight lg:text-xl font-[var(--font-display)] transition-colors duration-500",
                 isScrolled ? "text-foreground" : "text-white"
               )}>
-                IPTV<span className={isScrolled ? "gradient-text" : "text-cyan-400"}> Providers </span>UK
+                Best <span className={isScrolled ? "gradient-text" : "text-cyan-400"}>IPTV Providers</span> UK
               </span>
             </Link>
 
