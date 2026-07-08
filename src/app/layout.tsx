@@ -23,26 +23,11 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Best IPTV Providers UK 2026 | 37K Channels From £4.99/mo",
+    default: "IPTV Providers UK: Compare Plans & Prices 2026 — 4K, From £4.99",
     template: "%s | IPTV Providers UK",
   },
   description:
-    "Compare the best IPTV providers UK 2026. 37,000 channels in 4K, built-in VPN, instant activation, 30-day money-back guarantee. From £4.99/month.",
-  keywords: [
-    "iptv providers",
-    "iptv providers uk",
-    "best iptv providers",
-    "best iptv providers uk",
-    "uk iptv providers",
-    "iptv subscription",
-    "iptv uk",
-    "best iptv uk",
-    "iptv service",
-    "iptv reviews",
-    "buy iptv",
-    "british iptv",
-    "premium iptv",
-  ],
+    "Compare IPTV providers UK households actually rate in 2026 — 37,000 live channels, 4K UHD, built-in VPN, five screens and a 30-day money-back guarantee. Plans from £4.99/month with instant activation.",
   authors: [{ name: "IPTV Providers UK" }],
   creator: "IPTV Providers UK",
   applicationName: "IPTV Providers UK",
@@ -71,23 +56,23 @@ export const metadata: Metadata = {
     locale: "en_GB",
     siteName: "IPTV Providers UK",
     url: SITE_URL,
-    title: "Best IPTV Providers UK 2026 — 37K Channels, 4K, £4.99/mo",
+    title: "IPTV Providers UK: Compare Plans & Prices 2026 — 4K, From £4.99",
     description:
-      "Compare the best IPTV providers UK 2026. 37,000 channels, 198,000 films, 4K UHD, built-in VPN and instant activation. From £4.99/month with a 30-day refund.",
+      "37,000 live channels, 198,000 films, 4K UHD, built-in VPN and instant activation. Compare UK plans from £4.99/month with a 30-day refund.",
     images: [
       {
         url: "/iptv-providers-uk-og.webp",
         width: 1200,
         height: 630,
-        alt: "IPTV Providers UK — The #1 Rated 4K IPTV Service",
+        alt: "IPTV Providers UK — Compare 4K IPTV Plans For 2026",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best IPTV Providers UK 2026 — 37K Channels, 4K, £4.99/mo",
+    title: "IPTV Providers UK: Compare Plans & Prices 2026 — 4K, From £4.99",
     description:
-      "Compare the best IPTV providers UK. 37,000 channels, 4K UHD, built-in VPN, five screens, 30-day guarantee. From £4.99/month.",
+      "37,000 channels, 4K UHD, built-in VPN, five screens, 30-day guarantee. Compare UK plans from £4.99/month.",
     images: ["/iptv-providers-uk-og.webp"],
   },
   robots: {

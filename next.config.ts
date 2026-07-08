@@ -38,6 +38,45 @@ const nextConfig: NextConfig = {
         destination: "/blog/iptv-providers-uk-sport-guide",
         permanent: true,
       },
+      // Cluster consolidation (2026-07-08). Seven near-duplicate posts were
+      // cannibalising the homepage and the pillar guides for the same
+      // "best/compare iptv providers uk" intents — each 301 targets the one
+      // page that should own that intent.
+      {
+        source: "/blog/what-are-the-best-iptv-providers",
+        destination: "/blog/best-iptv-providers-uk-2026",
+        permanent: true,
+      },
+      {
+        source: "/blog/iptv-providers-comparison-2026",
+        destination: "/blog/best-iptv-providers-uk-2026",
+        permanent: true,
+      },
+      {
+        source: "/blog/best-iptv-uk-2026",
+        destination: "/blog/best-iptv-providers-uk-2026",
+        permanent: true,
+      },
+      {
+        source: "/blog/best-iptv-service-uk",
+        destination: "/blog/best-iptv-providers-uk-2026",
+        permanent: true,
+      },
+      {
+        source: "/blog/best-iptv-subscription-uk",
+        destination: "/blog/iptv-subscription-uk-2026",
+        permanent: true,
+      },
+      {
+        source: "/blog/cheap-iptv-subscription-uk",
+        destination: "/blog/cheap-iptv-providers-uk",
+        permanent: true,
+      },
+      {
+        source: "/blog/iptv-service-providers-uk",
+        destination: "/",
+        permanent: true,
+      },
     ];
   },
   async headers() {

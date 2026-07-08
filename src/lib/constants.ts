@@ -60,7 +60,7 @@ export const FEATURES = [
     icon: "LayoutGrid" as const,
   },
   {
-    title: "Plans From £4.99/Month — IPTV Providers UK Pricing Done Right",
+    title: "Plans From £4.99/Month With No Contract",
     description:
       "Full access to 37,000 channels, 4K streaming and built-in VPN from £4.99/month on the 12-month plan. A fraction of the cost of a typical premium pay-TV bundle, with no contract.",
     icon: "Film" as const,
@@ -260,9 +260,9 @@ export const DEVICES = [
 // AggregateRating). "Sky at £75+" replaced with generic comparison.
 export const FAQ_ITEMS = [
   {
-    question: "What should I look for when choosing IPTV providers UK?",
+    question: "Which IPTV provider is best in the UK in 2026?",
     answer:
-      "Check five things: published uptime data, verified reviews on Trustpilot or Reddit, GBP pricing with no hidden fees, UK-based support with response time guarantees and a refund policy that returns funds the same day. This service passes all five.",
+      "The best IPTV provider in the UK in 2026 is the one that publishes its uptime, holds verified reviews, prices in GBP with no hidden fees, runs UK-based support around the clock and backs every plan with a 30-day refund. IPTV Providers UK meets all five standards, with 37,000 live channels and 4K UHD from £4.99/month.",
   },
   {
     question: "How many channels does this IPTV service include?",
@@ -335,8 +335,8 @@ export const CHANNEL_CATEGORIES = [
     icon: "Tv" as const,
     channels:
       "Every flagship British network in the line-up, covering drama, comedy, reality, lifestyle and primetime entertainment. Regional variants and +1 timeshift feeds bundled as standard — the full UK viewing experience on one subscription.",
-    linkHref: "/blog/iptv-providers-comparison-2026",
-    linkLabel: "IPTV providers comparison 2026",
+    linkHref: "/blog/iptv-providers-smart-tv-setup",
+    linkLabel: "Smart TV setup guide",
   },
   {
     name: "IPTV On-Demand Cinema — 198,000 Titles",
@@ -384,10 +384,10 @@ export const CHANNEL_CATEGORIES = [
 export const BLOG_POSTS = [
   {
     slug: "best-iptv-providers-uk-2026",
-    title: "Best IPTV Providers UK 2026 — Top 10 Tested And Ranked",
+    title: "Best IPTV Providers UK 2026 — Top 10 Compared And Ranked",
     excerpt:
-      "The definitive 2026 ranking of the best IPTV providers UK households can actually trust. Tested across channel coverage, 4K stream quality, support response times, pricing transparency and refund honesty.",
-    date: "2026-06-20",
+      "The definitive 2026 ranking of the best IPTV providers UK households can actually trust. Tested and compared side-by-side across channel coverage, 4K stream quality, support response times, pricing transparency and refund honesty.",
+    date: "2026-07-08",
     readTime: "10 min read",
     category: "Buyer's Guide",
   },
@@ -399,15 +399,6 @@ export const BLOG_POSTS = [
     date: "2026-06-19",
     readTime: "7 min read",
     category: "Guide",
-  },
-  {
-    slug: "what-are-the-best-iptv-providers",
-    title: "What Are The Best IPTV Providers? An Honest 2026 Comparison",
-    excerpt:
-      "What \"best\" actually means in IPTV in 2026, how the top UK services stack up by category, and which one wins for the household watching most weeknights.",
-    date: "2026-06-18",
-    readTime: "8 min read",
-    category: "Comparison",
   },
   {
     slug: "how-do-iptv-providers-work",
@@ -423,7 +414,7 @@ export const BLOG_POSTS = [
     title: "Cheap IPTV Providers UK — Top Affordable Picks 2026",
     excerpt:
       "The lowest-price IPTV providers UK subscribers can trust in 2026. What gets cut at rock-bottom prices, where the real value line sits, and the £4.99/month sweet spot.",
-    date: "2026-06-16",
+    date: "2026-07-08",
     readTime: "7 min read",
     category: "Buyer's Guide",
   },
@@ -453,15 +444,6 @@ export const BLOG_POSTS = [
     date: "2026-06-13",
     readTime: "7 min read",
     category: "Devices",
-  },
-  {
-    slug: "iptv-providers-comparison-2026",
-    title: "IPTV Providers Comparison 2026 — UK Side-By-Side Ranking",
-    excerpt:
-      "A detailed side-by-side ranking of UK IPTV providers in 2026. Pricing, channel coverage, reliability, support and 30-day guarantees compared in one table.",
-    date: "2026-06-12",
-    readTime: "9 min read",
-    category: "Comparison",
   },
   {
     slug: "are-iptv-providers-legal-uk",
@@ -522,7 +504,7 @@ export const BLOG_POSTS = [
     title: "IPTV Subscription UK 2026 — Best Plans, Pricing & Value",
     excerpt:
       "Complete pricing breakdown of every IPTV subscription tier in the UK, what each plan includes and the £4.99/month sweet spot for households watching most evenings.",
-    date: "2026-06-22",
+    date: "2026-07-08",
     readTime: "9 min read",
     category: "Pricing",
   },
@@ -534,51 +516,6 @@ export const BLOG_POSTS = [
     date: "2026-06-22",
     readTime: "7 min read",
     category: "Pricing",
-  },
-  {
-    slug: "best-iptv-subscription-uk",
-    title: "Best IPTV Subscription UK 2026 — Top Picks Compared",
-    excerpt:
-      "The best IPTV subscription UK households can buy in 2026. Side-by-side comparison of channel coverage, 4K UHD, support response times and refund policies.",
-    date: "2026-06-22",
-    readTime: "8 min read",
-    category: "Pricing",
-  },
-  {
-    slug: "cheap-iptv-subscription-uk",
-    title: "Cheap IPTV Subscription UK — Affordable Plans From £3.75/month",
-    excerpt:
-      "The cheapest IPTV subscription UK plans worth buying in 2026. What gets cut at low prices, where the real value line sits, and the £3.75/month verified pick.",
-    date: "2026-06-22",
-    readTime: "7 min read",
-    category: "Pricing",
-  },
-  {
-    slug: "best-iptv-service-uk",
-    title: "Best IPTV Service UK 2026 — Top-Rated Services Ranked",
-    excerpt:
-      "Ranking the best IPTV service UK households can subscribe to in 2026. Uptime, channel breadth, sport reliability and support response measured side-by-side.",
-    date: "2026-06-22",
-    readTime: "8 min read",
-    category: "Service",
-  },
-  {
-    slug: "iptv-service-providers-uk",
-    title: "IPTV Service Providers UK 2026 — Top Companies Compared",
-    excerpt:
-      "Complete 2026 ranking of UK IPTV service providers. Licensing, infrastructure, support, pricing and refund policy compared on every credible service.",
-    date: "2026-06-22",
-    readTime: "7 min read",
-    category: "Service",
-  },
-  {
-    slug: "best-iptv-uk-2026",
-    title: "Best IPTV UK 2026 — The Definitive UK Service Ranking",
-    excerpt:
-      "The best IPTV UK ranking for 2026. Top services tested on channels, sport, 4K UHD, uptime, support, refund honesty and value — verified across six weeks of use.",
-    date: "2026-06-22",
-    readTime: "9 min read",
-    category: "Buyer's Guide",
   },
   {
     slug: "iptv-packages-uk",

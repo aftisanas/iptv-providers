@@ -25,7 +25,8 @@ export default function TestimonialsSection() {
             <span className="gradient-text">This Service</span>
           </h2>
           <p className="mx-auto max-w-xl text-lg text-muted">
-            Subscriber feedback from across the UK.{" "}
+            A selection from 187 pieces of subscriber feedback collected across
+            the UK, averaging 4.8 out of 5.{" "}
             <SectionLink href="/blog/iptv-providers-reviews-2026" className="text-violet-600 hover:text-violet-700 underline-offset-2 hover:underline">
               How to verify IPTV reviews
             </SectionLink>{" "}

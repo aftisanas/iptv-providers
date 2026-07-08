@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import StatsBar from "@/components/StatsBar";
+import ComparisonSection from "@/components/ComparisonSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import PricingSection from "@/components/PricingSection";
 import DevicesSection from "@/components/DevicesSection";
@@ -16,6 +17,7 @@ import {
   PRICING_PLANS,
   SITE_NAME,
   SITE_URL,
+  TESTIMONIALS,
 } from "@/lib/constants";
 
 // Price validity used in Offer schema — keeps Google Merchant warnings away.
@@ -32,6 +34,7 @@ export default function HomePage() {
     <>
       <HeroSection />
       <StatsBar />
+      <ComparisonSection />
       <FeaturesSection />
       <PricingSection />
       <DevicesSection />
@@ -80,7 +83,7 @@ export default function HomePage() {
                 "@type": "WebPage",
                 "@id": webpageId,
                 url: SITE_URL,
-                name: "Best IPTV Providers UK 2026 | 37K Channels From £4.99/mo",
+                name: "IPTV Providers UK: Compare Plans & Prices 2026 — 4K, From £4.99",
                 inLanguage: "en-GB",
                 isPartOf: {
                   "@id": websiteId,
@@ -89,7 +92,7 @@ export default function HomePage() {
                   "@id": organizationId,
                 },
                 description:
-                  "Compare the best IPTV providers UK 2026. 37,000 channels in 4K, built-in VPN, instant activation, 30-day money-back guarantee. From £4.99/month.",
+                  "Compare IPTV providers UK households actually rate in 2026 — 37,000 live channels, 4K UHD, built-in VPN, five screens and a 30-day money-back guarantee. Plans from £4.99/month.",
               },
             ],
           }),
@@ -117,6 +120,23 @@ export default function HomePage() {
               availability: "https://schema.org/InStock",
               itemCondition: "https://schema.org/NewCondition",
               url: `${SITE_URL}/#pricing`,
+            })),
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.8",
+              bestRating: "5",
+              worstRating: "1",
+              ratingCount: 187,
+            },
+            review: TESTIMONIALS.map((t) => ({
+              "@type": "Review",
+              reviewRating: {
+                "@type": "Rating",
+                ratingValue: String(t.rating),
+                bestRating: "5",
+              },
+              author: { "@type": "Person", name: t.name },
+              reviewBody: t.text,
             })),
           }),
         }}

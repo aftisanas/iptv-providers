@@ -47,7 +47,7 @@ export default function Footer() {
           {/* Quick Links */}
           <div className="lg:justify-self-center">
             <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-4">
-              IPTV Providers UK Links
+              Quick Links
             </h3>
             <ul className="space-y-3">
               {NAV_LINKS.map((link) => (
@@ -66,7 +66,7 @@ export default function Footer() {
           {/* Legal */}
           <div className="lg:justify-self-start">
             <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-4">
-              IPTV Providers UK Legal
+              Legal
             </h3>
             <ul className="space-y-3">
               {LEGAL_LINKS.map((link) => (

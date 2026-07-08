@@ -26,8 +26,8 @@ export default function FAQSection() {
             Frequently Asked Questions
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            IPTV Providers UK &mdash; Frequently{" "}
-            <span className="gradient-text">Asked Questions</span>
+            Frequently Asked{" "}
+            <span className="gradient-text">Questions</span>
           </h2>
           <p className="text-lg text-muted">
             Essential answers to{" "}

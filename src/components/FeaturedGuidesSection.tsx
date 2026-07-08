@@ -18,7 +18,7 @@ const guides = [
   { title: "Best IPTV Providers UK 2026", description: "The definitive 2026 ranking — top 10 UK IPTV providers tested across channel coverage, 4K stream quality, support and refund honesty.", href: "/blog/best-iptv-providers-uk-2026", icon: Star, category: "Buyer's Guide", readTime: "10 min read" },
   { title: "IPTV Subscription UK 2026", description: "Complete pricing breakdown of every IPTV subscription tier in the UK, what each plan includes and the £4.99/month sweet spot for households.", href: "/blog/iptv-subscription-uk-2026", icon: PoundSterling, category: "Pricing", readTime: "9 min read" },
   { title: "How To Find Reliable IPTV Providers", description: "Where to look, what red flags to avoid, and the 7-point checklist every UK buyer should run before paying any IPTV provider a penny.", href: "/blog/how-to-find-iptv-providers", icon: Search, category: "Guide", readTime: "7 min read" },
-  { title: "Best IPTV Service UK 2026", description: "Ranking the best IPTV service providers in the UK across uptime, channel breadth, sport reliability and support response. Side-by-side comparison.", href: "/blog/best-iptv-service-uk", icon: ShieldCheck, category: "Service", readTime: "8 min read" },
+  { title: "Buy IPTV Subscription UK", description: "How to buy an IPTV subscription safely in 2026 — payment safety, refund verification, instant activation and the 30-day money-back guarantee.", href: "/blog/buy-iptv-subscription-uk", icon: ShieldCheck, category: "Buying", readTime: "7 min read" },
   { title: "IPTV Providers Reviews 2026", description: "Why most IPTV reviews cannot be trusted, where genuine subscriber feedback actually lives, and the five red flags that mark a fake review at a glance.", href: "/blog/iptv-providers-reviews-2026", icon: BookOpen, category: "Trust", readTime: "8 min read" },
   { title: "Are IPTV Providers Legal In The UK?", description: "A definitive 2026 answer on IPTV legal status in the UK, what makes a provider legal versus not, and the red flags to walk away from.", href: "/blog/are-iptv-providers-legal-uk", icon: Scale, category: "Legal", readTime: "6 min read" },
   { title: "Best IPTV For Fire Stick", description: "Fire Stick is the #1 IPTV device in the UK in 2026. Here are the providers built for it — H.265, TiViMate-compatible, adaptive bitrate, fast setup.", href: "/blog/best-iptv-providers-firestick", icon: Tv, category: "Devices", readTime: "8 min read" },
@@ -35,11 +35,11 @@ export default function FeaturedGuidesSection() {
             UK Buyer&apos;s Guides 2026
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Featured Guides For Choosing{" "}
-            <span className="gradient-text">The Best IPTV Providers UK</span>
+            Guides For Choosing An{" "}
+            <span className="gradient-text">IPTV Provider In The UK</span>
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-muted">
-            Independent, evidence-based guides covering every part of the UK IPTV buyer&apos;s journey. Read these eight first before committing to any subscription — they cover everything that matters.
+            Independent, evidence-based guides covering every part of the UK buyer&apos;s journey. Read these eight first before committing to any subscription — they cover everything that matters.
           </p>
         </motion.div>
 
@@ -74,7 +74,7 @@ export default function FeaturedGuidesSection() {
 
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="mt-12 text-center">
           <Link href="/blog" className="group inline-flex items-center gap-2 rounded-xl border border-violet-200 bg-white px-6 py-3 text-sm font-medium text-foreground transition-all hover:border-violet-300 hover:bg-violet-50 shadow-sm">
-            See All 23 IPTV Buyer&apos;s Guides
+            Browse All 16 IPTV Buyer&apos;s Guides
             <span className="transition-transform group-hover:translate-x-1">→</span>
           </Link>
         </motion.div>

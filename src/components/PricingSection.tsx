@@ -109,8 +109,8 @@ export default function PricingSection() {
             Transparent GBP Pricing
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-5">
-            IPTV Providers UK Pricing &mdash;{" "}
-            <span className="gradient-text">Transparent Plans, No Hidden Fees</span>
+            Transparent Pricing &mdash;{" "}
+            <span className="gradient-text">Four Plans, No Hidden Fees</span>
           </h2>
           <p className="mx-auto max-w-2xl text-base text-muted leading-relaxed">
             One service, four terms. Channels, 4K and VPN stay identical across every plan. The only variable is term length and savings — the fairest deal offered by UK IPTV providers.

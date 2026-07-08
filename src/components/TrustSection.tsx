@@ -47,8 +47,8 @@ export default function TrustSection() {
             Four Hard Promises
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Four Guarantees That Define{" "}
-            <span className="gradient-text">The Best IPTV Providers UK</span>
+            Four Guarantees{" "}
+            <span className="gradient-text">Behind Every Plan</span>
           </h2>
           <p className="mx-auto max-w-xl text-lg text-muted">
             Claims are cheap. Every commitment below is published, measured and backed by a full{" "}

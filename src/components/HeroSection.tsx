@@ -72,8 +72,8 @@ export default function HeroSection() {
         >
           <span className="text-white">IPTV Providers UK — </span>
           <br />
-          <span className="text-white">The Guide To The #1 Rated </span>
-          <span className="gradient-text-hero">IPTV Service</span>
+          <span className="text-white">Compare Plans, Channels </span>
+          <span className="gradient-text-hero">And Prices For 2026</span>
         </motion.h1>
 
         {/* Subtitle */}
@@ -83,7 +83,7 @@ export default function HeroSection() {
           transition={{ duration: 0.7, delay: 0.18 }}
           className="text-base sm:text-lg text-gray-300/90 max-w-3xl mb-3 px-2 sm:px-0"
         >
-          37,000 live channels, 198,000 films and 4K UHD streaming — the UK IPTV service built for households who want every channel, every match, every device on one subscription. From £4.99/month with a 30-day refund.
+          37,000 live channels, 198,000 films and 4K UHD streaming — built for households who want every channel, every match and every device on one subscription. From £4.99/month with a 30-day refund.
         </motion.p>
 
         {/* Promo banner — replaces hero device image */}
