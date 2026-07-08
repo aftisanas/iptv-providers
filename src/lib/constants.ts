@@ -13,6 +13,7 @@ export const NAV_LINKS = [
 ] as const;
 
 export const LEGAL_LINKS = [
+  { label: "About Us", href: "/about" },
   { label: "Terms of Service", href: "/terms" },
   { label: "Privacy Policy", href: "/privacy" },
   { label: "DMCA Policy", href: "/dmca" },
@@ -464,6 +465,15 @@ export const BLOG_POSTS = [
     category: "Trust",
   },
   {
+    slug: "iptv-vs-sky-comparison",
+    title: "IPTV Vs Sky TV UK (2026) — Real Cost And Channel Comparison",
+    excerpt:
+      "What Sky TV actually costs in 2026 versus a modern UK IPTV subscription — monthly price, sport and cinema add-ons, contracts, hardware and picture quality compared honestly, line by line.",
+    date: "2026-07-08",
+    readTime: "8 min read",
+    category: "Comparison",
+  },
+  {
     slug: "iptv-providers-vs-traditional-tv",
     title: "IPTV Providers Vs Traditional Pay-TV — UK Cost Comparison 2026",
     excerpt:
@@ -516,6 +526,15 @@ export const BLOG_POSTS = [
     date: "2026-06-22",
     readTime: "7 min read",
     category: "Pricing",
+  },
+  {
+    slug: "iptv-providers-reddit",
+    title: "IPTV Providers Reddit UK — What Users Actually Recommend (2026)",
+    excerpt:
+      "What Reddit's IPTV communities really say about UK providers in 2026, how to read r/IPTV recommendations without getting played by shill accounts, and the checklist redditors use before buying.",
+    date: "2026-07-08",
+    readTime: "8 min read",
+    category: "Trust",
   },
   {
     slug: "iptv-packages-uk",

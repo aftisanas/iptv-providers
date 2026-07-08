@@ -72,7 +72,7 @@ export default function ComparisonSection() {
         {/* Section header */}
         <div className="text-center mb-10">
           <span className="inline-block rounded-full bg-violet-50 border border-violet-200 px-4 py-1.5 text-sm font-medium text-violet-700 mb-4">
-            The 2026 Comparison
+            The 2026 Comparison — Updated 8 July 2026
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             How UK IPTV Providers{" "}

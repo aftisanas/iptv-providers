@@ -74,7 +74,7 @@ export default function FeaturedGuidesSection() {
 
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="mt-12 text-center">
           <Link href="/blog" className="group inline-flex items-center gap-2 rounded-xl border border-violet-200 bg-white px-6 py-3 text-sm font-medium text-foreground transition-all hover:border-violet-300 hover:bg-violet-50 shadow-sm">
-            Browse All 16 IPTV Buyer&apos;s Guides
+            Browse All 18 IPTV Buyer&apos;s Guides
             <span className="transition-transform group-hover:translate-x-1">→</span>
           </Link>
         </motion.div>

@@ -84,6 +84,7 @@ export default function HomePage() {
                 "@id": webpageId,
                 url: SITE_URL,
                 name: "IPTV Providers UK: Compare Plans & Prices 2026 — 4K, From £4.99",
+                dateModified: "2026-07-08",
                 inLanguage: "en-GB",
                 isPartOf: {
                   "@id": websiteId,

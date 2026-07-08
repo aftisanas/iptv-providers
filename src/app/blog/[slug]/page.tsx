@@ -31,6 +31,8 @@ const HERO_IMAGES: Record<string, string> = {
   "iptv-subscription-uk-2026": "/blog/best-iptv-providers-uk-2026.webp",
   "buy-iptv-subscription-uk": "/blog/cheap-iptv-providers-uk.webp",
   "iptv-packages-uk": "/blog/iptv-providers-comparison-2026.webp",
+  "iptv-vs-sky-comparison": "/blog/iptv-providers-vs-traditional-tv.webp",
+  "iptv-providers-reddit": "/blog/iptv-providers-reviews-2026.webp",
 };
 
 const MID_IMAGES: Record<string, string> = {
@@ -50,6 +52,8 @@ const MID_IMAGES: Record<string, string> = {
   "iptv-subscription-uk-2026": "/blog/iptv-providers-vs-traditional-tv.webp",
   "buy-iptv-subscription-uk": "/blog/iptv-providers-reviews-2026.webp",
   "iptv-packages-uk": "/blog/iptv-providers-vs-traditional-tv.webp",
+  "iptv-vs-sky-comparison": "/blog/cheap-iptv-providers-uk.webp",
+  "iptv-providers-reddit": "/blog/how-to-spot-reliable-iptv-provider.webp",
 };
 
 export async function generateStaticParams() {

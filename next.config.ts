@@ -28,11 +28,10 @@ const nextConfig: NextConfig = {
         destination: "/blog/iptv-providers-setup-fire-stick",
         permanent: true,
       },
-      {
-        source: "/blog/iptv-vs-sky-comparison",
-        destination: "/blog/iptv-providers-vs-traditional-tv",
-        permanent: true,
-      },
+      // NOTE: /blog/iptv-vs-sky-comparison was 301'd here for a while, but it
+      // was the site's single biggest impression source in GSC (25 imps for
+      // "iptv sky"-family queries), so it has been restored as a live post
+      // (2026-07-08). Do NOT re-add a redirect for it.
       {
         source: "/blog/premier-league-streaming-guide",
         destination: "/blog/iptv-providers-uk-sport-guide",
