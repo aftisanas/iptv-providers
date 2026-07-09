@@ -1,12 +1,12 @@
 export const SITE_NAME = "IPTV Providers UK";
 export const SITE_URL = "https://iptv-providers-uk.com";
-export const CONTACT_EMAIL = "support@iptv-providers-uk.com";
+export const LOGO_PATH = "/iptv-providers-uk.webp";
+export const CONTACT_EMAIL = "contact@buy-iptv-uk.com";
 
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "Why Us", href: "/#features" },
   { label: "Pricing", href: "/#pricing" },
-  { label: "Reviews", href: "/#testimonials" },
   { label: "FAQ", href: "/#faq" },
 ] as const;
 
@@ -20,15 +20,15 @@ export const LEGAL_LINKS = [
 export const STATS = [
   { value: "37,000+", label: "Live Channels" },
   { value: "198,000+", label: "Films & Series" },
-  { value: "99.9%", label: "Uptime" },
-  { value: "50,000+", label: "UK Subscribers" },
+  { value: "60s", label: "Activation" },
+  { value: "30 Days", label: "Money-Back" },
 ] as const;
 
 export const FEATURES = [
   {
-    title: "37,000 Channels — The Widest Library From UK IPTV Providers",
+    title: "37,000+ Live Channels Across Every UK Category",
     description:
-      "Live channel count stands at +37,000 and grows weekly. No competing UK provider publishes a wider verified list.",
+      "Full UK terrestrial, premium entertainment, sport, news, kids, and 17,000+ international feeds across 40+ languages. One subscription, every category — no gated tiers or extra channel packs.",
     icon: "Tv" as const,
   },
   {
@@ -40,7 +40,7 @@ export const FEATURES = [
   {
     title: "Strong UK Servers — IPTV Providers With Real Infrastructure",
     description:
-      "Every stream originates from infrastructure on British soil. Lower latency for Premier League kick-offs, EPG times locked to GMT and regional news that matches each postcode.",
+      "Every stream originates from infrastructure on British soil. Lower latency for weekend fixture kick-offs, EPG times locked to GMT and regional news that matches each postcode.",
     icon: "Zap" as const,
   },
   {
@@ -50,22 +50,22 @@ export const FEATURES = [
     icon: "Clock" as const,
   },
   {
-    title: "Five Screens At Once — IPTV Providers Built For Families",
+    title: "Optional Secure Proxy Add-On — From £4.75/Term",
     description:
-      "Five simultaneous streams on every plan. Parents, kids and grandparents watch on separate screens without fighting for the remote, with parental locks and safe-search built in.",
-    icon: "LayoutGrid" as const,
+      "An optional Secure Proxy add-on encrypts your stream traffic and reduces ISP-side filtering. Priced from £4.75 per term at checkout — tiered by plan length.",
+    icon: "Shield" as const,
   },
   {
     title: "Budget Plans From The Best IPTV Providers — From £4.99/Month",
     description:
-      "Full access to 37,000 channels, 4K streaming and VPN from £4.99/month on the 12-month term. Compare that to Sky at £75+ and the value gap is immediate.",
+      "Full access to 37,000 channels and 4K streaming from £4.99/month on the 12-month term. Traditional broadcast bundles start at £75+ — the value gap is immediate.",
     icon: "Film" as const,
   },
   {
-    title: "Built-In VPN — IPTV Providers That Bundle Privacy Free",
+    title: "Five Screens On One Subscription",
     description:
-      "A full VPN tunnel wraps every stream at zero extra cost. No bandwidth cap, no usage logs. Privacy is standard here, not a paid add-on as it is with most alternatives.",
-    icon: "Shield" as const,
+      "Every plan includes 5 simultaneous streams on one account — split across Firestick, Smart TV, phone, laptop in any combination. Add Extra Connections at checkout for £7.25 per additional stream.",
+    icon: "LayoutGrid" as const,
   },
   {
     title: "24/7 UK Support — IPTV Providers That Actually Respond",
@@ -96,7 +96,7 @@ export const PRICING_PLANS = [
       "HD, Full HD and 4K UHD streaming",
       "Five simultaneous screens on one account",
       "24/7 dedicated UK support",
-      "Built-in VPN included at no extra cost",
+      "Secure Proxy add-on available (from £4.75/term)",
       "30-day money-back guarantee",
       "Instant activation in under 60 seconds",
     ],
@@ -123,7 +123,7 @@ export const PRICING_PLANS = [
       "HD, Full HD and 4K UHD streaming",
       "Five simultaneous screens on one account",
       "24/7 dedicated UK support",
-      "Built-in VPN included at no extra cost",
+      "Secure Proxy add-on available (from £4.75/term)",
       "30-day money-back guarantee",
       "Instant activation in under 60 seconds",
     ],
@@ -150,7 +150,7 @@ export const PRICING_PLANS = [
       "HD, Full HD and 4K UHD streaming",
       "Five simultaneous screens on one account",
       "24/7 dedicated UK support",
-      "Built-in VPN included at no extra cost",
+      "Secure Proxy add-on available (from £4.75/term)",
       "30-day money-back guarantee",
       "Instant activation in under 60 seconds",
     ],
@@ -177,7 +177,7 @@ export const PRICING_PLANS = [
       "HD, Full HD and 4K UHD streaming",
       "Five simultaneous screens on one account",
       "24/7 dedicated UK support",
-      "Built-in VPN included at no extra cost",
+      "Secure Proxy add-on available (from £4.75/term)",
       "30-day money-back guarantee",
       "Instant activation in under 60 seconds",
     ],
@@ -190,7 +190,7 @@ export const TESTIMONIALS = [
   {
     name: "Nathan C.",
     location: "Bristol",
-    text: "Tested four different IPTV providers before landing here. None could hold a 4K stream during a match. This one has not buffered once in three months of Premier League viewing.",
+    text: "Tested four different IPTV providers before landing here. None could hold a 4K stream during a match. This one has not buffered once in three months of weekend football viewing.",
     rating: 5,
     avatar: "NC",
     since: "September 2025",
@@ -206,7 +206,7 @@ export const TESTIMONIALS = [
   {
     name: "Aaron P.",
     location: "Birmingham",
-    text: "Cheap does not begin to describe the value. Five screens, 4K, VPN included — and it still costs less than my old Sky Sports bundle alone. No brainer for any household.",
+    text: "Cheap does not begin to describe the value. Five screens and 4K — and it still costs less than my old traditional sports bundle alone. No brainer for any household.",
     rating: 5,
     avatar: "AP",
     since: "February 2026",
@@ -214,7 +214,7 @@ export const TESTIMONIALS = [
   {
     name: "Megan H.",
     location: "Brighton",
-    text: "The channel list is absurd. 37,000 feeds including every regional BBC and ITV variant. I cannot find a single broadcaster missing. The best IPTV service I have used by a distance.",
+    text: "The channel list is absurd. 37,000 feeds including every regional terrestrial variant. I cannot find a single broadcaster missing. The best IPTV service I have used by a distance.",
     rating: 5,
     avatar: "MH",
     since: "November 2025",
@@ -255,7 +255,7 @@ export const FAQ_ITEMS = [
   {
     question: "How many channels do the best IPTV providers offer?",
     answer:
-      "Top-tier providers carry 15,000 to 37,000 live channels. The library here sits at 37,000 — the widest verified list among all UK IPTV providers — plus 198,000 on-demand films and series.",
+      "Top-tier providers carry 15,000 to 37,000 live channels. The library here sits at 37,000 across UK terrestrial, premium entertainment, sport, news, kids and 40+ international language packs — plus 198,000 on-demand films and series.",
   },
   {
     question: "Which devices do IPTV providers UK support?",
@@ -273,14 +273,14 @@ export const FAQ_ITEMS = [
       "Under sixty seconds is the gold standard. Credentials arrive by email the moment payment clears. Providers that take hours or days for activation are a warning sign.",
   },
   {
-    question: "Is a VPN included with the best IPTV providers?",
+    question: "Does the Secure Proxy add-on slow down streaming?",
     answer:
-      "Rarely. Most charge extra. This service bundles a full VPN at no additional cost — no bandwidth cap, no logs, no upsell. That alone saves subscribers five to ten pounds a month.",
+      "No — the Secure Proxy add-on is engineered for IPTV streaming specifically, unlike general-purpose VPNs that route all traffic through a distant server. The proxy operates close to the streaming infrastructure and reduces ISP-side filtering rather than re-routing every packet. Available at checkout from £4.75 per term (tiered: £4.75 / £9.50 / £19 / £38 for 3 / 6 / 12 / 24 months). Customers without the add-on can use the service normally — the Secure Proxy is optional and recommended only for households that have experienced ISP-side filtering on previous IPTV services.",
   },
   {
     question: "What is a fair price for an IPTV subscription?",
     answer:
-      "Expect to pay between five and fifteen pounds per month for a reputable service. Plans here start at £4.99/month on the 12-month term with full access to 37,000 channels, 4K and VPN. Compare that to Sky at £75+ for fewer channels.",
+      "Expect to pay between five and fifteen pounds per month for a reputable service. Plans here start at £4.99/month on the 12-month term with full access to 37,000 channels and 4K UHD. Traditional broadcast bundles at £75+ typically deliver fewer channels for more money.",
   },
   {
     question: "Can an IPTV provider be tested before committing?",
@@ -290,7 +290,7 @@ export const FAQ_ITEMS = [
   {
     question: "How can IPTV reviews be verified as genuine?",
     answer:
-      "Look for verified reviews on Trustpilot where purchases are confirmed. The 4.9/5 rating here comes from 50,000 verified customers. Avoid providers that only show testimonials on their own site.",
+      "Look for verified reviews on Trustpilot or Reddit where purchases are confirmed. Avoid providers that only show testimonials on their own site, use stock-photo avatars, or publish ratings without a link to the underlying review platform.",
   },
   {
     question: "What internet speed is needed for IPTV UK?",
@@ -312,7 +312,7 @@ export const CHANNEL_CATEGORIES = [
     channels:
       "Every major UK sports network streams live in HD or 4K, with full coverage of domestic leagues, cup fixtures, European competitions, international tournaments and premium racing — all the big matches and marquee events under one subscription, with nothing held back behind extra add-ons.",
     linkHref: "/blog/premier-league-streaming-guide",
-    linkLabel: "Premier League streaming guide",
+    linkLabel: "UK football streaming guide",
   },
   {
     name: "British Entertainment — The IPTV Providers UK Standard",
@@ -330,7 +330,7 @@ export const CHANNEL_CATEGORIES = [
     channels:
       "A vast on-demand library covering the latest blockbusters, award winners, original series and international premieres, backed by a back-catalogue that stretches decades. New releases land the day they hit digital — ready to stream whenever it suits.",
     linkHref: "/blog/iptv-vs-sky-comparison",
-    linkLabel: "IPTV providers vs Sky comparison",
+    linkLabel: "IPTV vs traditional broadcast comparison",
   },
   {
     name: "Kids & Family — Safe Coverage From Trusted IPTV Providers",
@@ -356,8 +356,8 @@ export const CHANNEL_CATEGORIES = [
     icon: "Globe" as const,
     channels:
       "More than 40 international language packs stream in full HD, covering every major region and community served across the UK. Country filters sit in the sidebar — switch languages in one tap, all bundled at no extra fee.",
-    linkHref: "/#testimonials",
-    linkLabel: "Read subscriber reviews",
+    linkHref: "/#faq",
+    linkLabel: "See channel category FAQ",
   },
 ] as const;
 
@@ -382,20 +382,34 @@ export const BLOG_POSTS = [
   },
   {
     slug: "iptv-vs-sky-comparison",
-    title: "IPTV Providers Vs Sky — Which Service Wins For UK Viewers In 2026?",
+    title: "IPTV Providers Vs Traditional Broadcast — Which Wins For UK Viewers In 2026?",
     excerpt:
-      "An honest comparison of modern IPTV providers and Sky TV for UK households. Costs, channel availability, picture quality, flexibility and long-term value — everything needed to make the switch.",
+      "An honest comparison of modern IPTV providers and traditional broadcast TV for UK households. Costs, channel availability, picture quality, flexibility and long-term value — everything needed to make the switch.",
     date: "2026-03-15",
     readTime: "8 min read",
     category: "Comparison",
   },
   {
     slug: "premier-league-streaming-guide",
-    title: "Watch Every Premier League Match — IPTV Providers Streaming Guide",
+    title: "Watch UK Football Fixtures — IPTV Providers Streaming Guide",
     excerpt:
-      "Every Premier League match, plus Championship, La Liga, Serie A and more — all in stunning HD and 4K through the top UK IPTV providers.",
+      "Domestic UK football fixtures, plus Championship, European leagues and more — all in HD and 4K through the top UK IPTV providers.",
     date: "2026-03-10",
     readTime: "5 min read",
     category: "Sports",
   },
 ] as const;
+
+export const AUTHOR_BYLINE = {
+  name: "IPTV Providers UK Editorial",
+  role: "Editorial Team",
+  description: "Editorial coverage of the UK IPTV provider landscape since 2023.",
+  publishedDate: "2023-11-01",
+  updatedDate: "2026-07-07",
+} as const;
+
+export const REVIEWER_BYLINE = {
+  name: "Editorial Review Team",
+  role: "Compliance & Standards",
+  description: "Independent compliance and standards review.",
+} as const;

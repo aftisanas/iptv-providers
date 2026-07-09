@@ -11,6 +11,7 @@ import CTASection from "@/components/CTASection";
 import {
   CONTACT_EMAIL,
   FAQ_ITEMS,
+  LOGO_PATH,
   PRICING_PLANS,
   SITE_NAME,
   SITE_URL,
@@ -21,7 +22,7 @@ export default function HomePage() {
   const websiteId = `${SITE_URL}/#website`;
   const webpageId = `${SITE_URL}/#webpage`;
   const productId = `${SITE_URL}/#product`;
-  const logoUrl = `${SITE_URL}/buy-iptv-uk.webp`;
+  const logoUrl = `${SITE_URL}${LOGO_PATH}`;
 
   return (
     <>
@@ -83,7 +84,7 @@ export default function HomePage() {
                   "@id": organizationId,
                 },
                 description:
-                  "Trusted IPTV providers UK 2026. 37,000 channels, 4K UHD, built-in VPN, 24/7 support. The top UK IPTV provider — from £4.99/month with a 30-day refund.",
+                  "Trusted IPTV providers UK 2026. 37,000 channels, 4K UHD, five simultaneous screens and 24/7 UK support — from £4.99/month with a 30-day refund.",
               },
             ],
           }),
@@ -100,7 +101,7 @@ export default function HomePage() {
             url: SITE_URL,
             image: [logoUrl],
             description:
-              "IPTV Providers UK subscription with 37,000+ live channels, 198,000+ on-demand titles, 4K UHD, five screens and a built-in VPN — from £4.99/month on the 12-month term.",
+              "IPTV Providers UK subscription with 37,000+ live channels, 198,000+ on-demand titles, 4K UHD and five simultaneous screens — from £4.99/month on the 12-month term.",
             brand: { "@type": "Brand", name: SITE_NAME },
             offers: PRICING_PLANS.map((plan) => ({
               "@type": "Offer",
@@ -111,12 +112,6 @@ export default function HomePage() {
               itemCondition: "https://schema.org/NewCondition",
               url: `${SITE_URL}/#pricing`,
             })),
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "50000",
-              bestRating: "5",
-            },
           }),
         }}
       />

@@ -52,21 +52,20 @@ export default function CTASection() {
             className="inline-flex items-center gap-2 rounded-full border border-purple-400/20 bg-white/[0.07] backdrop-blur-md px-5 py-2 text-sm text-purple-300 mb-8"
           >
             <Sparkles className="h-4 w-4 text-cyan-400" />
-            <span className="font-medium">Join 50,000+ UK Households</span>
+            <span className="font-medium">UK IPTV Provider You Can Actually Verify</span>
           </motion.div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
-            Stop Comparing IPTV Providers &mdash;{" "}
-            <span className="gradient-text-hero">Start Streaming Tonight</span>
+            Start Streaming In{" "}
+            <span className="gradient-text-hero">Under Two Minutes</span>
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-gray-300/90 mb-10 leading-relaxed">
-            Over 50,000 UK homes already chose the provider that delivers on every promise. The 24-month{" "}
+            Every plan delivers the full 37,000-channel library, 198,000+ films, and the optional{" "}
             <SectionLink href="/#pricing" className="text-cyan-300 hover:text-cyan-200 underline-offset-2 hover:underline">
-              premium IPTV plan
-            </SectionLink>{" "}
-            locks the lowest rate while covering the full 37,000-channel library, 198,000 films and a built-in VPN. The first channel plays minutes after payment — backed by a{" "}
+              Secure Proxy add-on
+            </SectionLink>. First channel plays in under two minutes after payment — backed by a{" "}
             <Link href="/refund" className="text-cyan-300 hover:text-cyan-200 underline-offset-2 hover:underline">
-              30-day refund guarantee
+              30-day refund
             </Link>{" "}
             and{" "}
             <Link href="/contact" className="text-cyan-300 hover:text-cyan-200 underline-offset-2 hover:underline">
@@ -93,7 +92,7 @@ export default function CTASection() {
           </div>
 
           <p className="mt-8 text-sm text-gray-400">
-            Questions? Email support@iptv-providers-uk.com — average reply under four minutes.
+            Questions? Email contact@buy-iptv-uk.com — replies during peak hours.
           </p>
         </motion.div>
       </div>

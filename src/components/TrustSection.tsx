@@ -13,15 +13,15 @@ const trustItems = [
   },
   {
     icon: Wifi,
-    title: "99.9% Uptime — IPTV Providers On Publicly Verified Servers",
+    title: "Reliable UK Infrastructure — Tuned For Peak Hours",
     description:
-      "A live status page tracks server performance minute by minute. If uptime dips below 99.9% in any calendar month, service credits apply automatically — transparent infrastructure separates the serious from the unreliable.",
+      "Built on UK-focused infrastructure tuned for low-latency playback during peak evening hours and major event windows. Adaptive bitrate keeps the picture stable when broadband dips.",
   },
   {
     icon: Lock,
-    title: "Built-In VPN — Premium IPTV Providers Include Privacy Free",
+    title: "Optional Secure Proxy Add-On — Priced From £4.75/Term",
     description:
-      "The VPN encrypts every stream from the first press of play. No bandwidth cap, no logs, no separate subscription. Most alternatives charge extra; this service bundles it on every plan.",
+      "An optional Secure Proxy add-on encrypts stream traffic and reduces ISP-side filtering. Priced from £4.75 per term at checkout, tiered by plan length — recommended only for households that need it.",
   },
   {
     icon: ServerCog,

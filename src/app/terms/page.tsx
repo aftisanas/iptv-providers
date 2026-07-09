@@ -42,7 +42,7 @@ export default function TermsPage() {
 
           <section>
             <h2 className="text-xl font-semibold text-foreground mb-3">6. IPTV Providers UK Service Availability</h2>
-            <p>The service targets 99.9% uptime but does not guarantee uninterrupted access. Scheduled maintenance, technical issues or circumstances beyond operational control may occasionally affect availability. Planned maintenance is announced in advance wherever practical.</p>
+            <p>The service aims to maintain high availability but does not guarantee uninterrupted access. Scheduled maintenance, technical issues or circumstances beyond operational control may occasionally affect availability. Planned maintenance is announced in advance wherever practical.</p>
           </section>
 
           <section>

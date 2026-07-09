@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: "%s | IPTV Providers UK",
   },
   description:
-    "Trusted IPTV providers UK 2026. 37,000 channels, 4K UHD, built-in VPN, 24/7 support. Compare plans from the top UK IPTV provider. From £4.99/month. 30-day refund.",
+    "Trusted IPTV providers UK 2026. 37,000 channels, 4K UHD, five simultaneous screens and 24/7 UK support. From £4.99/month with a 30-day refund.",
   keywords: [
     "iptv providers",
     "iptv providers uk",
@@ -73,13 +73,13 @@ export const metadata: Metadata = {
     url: SITE_URL,
     title: "IPTV Providers UK 2026 — The Complete Guide To The #1 Rated Service",
     description:
-      "Stop guessing which IPTV providers deliver. 37,000 channels, 198,000 films, fast activation, strong servers. See why 50,000 UK homes chose this provider.",
+      "Stop guessing which IPTV providers deliver. 37,000 channels, 198,000 films, fast activation, strong servers — with a 30-day money-back on every plan.",
   },
   twitter: {
     card: "summary_large_image",
     title: "IPTV Providers UK 2026 — The #1 Rated 4K IPTV Service",
     description:
-      "Trusted IPTV providers UK. 37,000 channels, 4K UHD, built-in VPN, five screens, 30-day guarantee. From £4.99/month.",
+      "Trusted IPTV providers UK. 37,000 channels, 4K UHD, five simultaneous screens, 30-day guarantee. From £4.99/month.",
   },
   robots: {
     index: true,
