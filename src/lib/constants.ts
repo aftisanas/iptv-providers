@@ -11,6 +11,8 @@ export const NAV_LINKS = [
 ] as const;
 
 export const LEGAL_LINKS = [
+  { label: "About Us", href: "/about" },
+  { label: "Editorial Policy", href: "/editorial-policy" },
   { label: "Terms of Service", href: "/terms" },
   { label: "Privacy Policy", href: "/privacy" },
   { label: "DMCA Policy", href: "/dmca" },
@@ -329,8 +331,8 @@ export const CHANNEL_CATEGORIES = [
     icon: "Film" as const,
     channels:
       "A vast on-demand library covering the latest blockbusters, award winners, original series and international premieres, backed by a back-catalogue that stretches decades. New releases land the day they hit digital — ready to stream whenever it suits.",
-    linkHref: "/blog/iptv-vs-sky-comparison",
-    linkLabel: "IPTV vs traditional broadcast comparison",
+    linkHref: "/blog/best-iptv-uk-guide-2026",
+    linkLabel: "How to choose the best IPTV providers UK",
   },
   {
     name: "Kids & Family — Safe Coverage From Trusted IPTV Providers",
@@ -381,15 +383,6 @@ export const BLOG_POSTS = [
     category: "Tutorial",
   },
   {
-    slug: "iptv-vs-sky-comparison",
-    title: "IPTV Providers Vs Traditional Broadcast — Which Wins For UK Viewers In 2026?",
-    excerpt:
-      "An honest comparison of modern IPTV providers and traditional broadcast TV for UK households. Costs, channel availability, picture quality, flexibility and long-term value — everything needed to make the switch.",
-    date: "2026-03-15",
-    readTime: "8 min read",
-    category: "Comparison",
-  },
-  {
     slug: "premier-league-streaming-guide",
     title: "Watch UK Football Fixtures — IPTV Providers Streaming Guide",
     excerpt:
@@ -405,7 +398,7 @@ export const AUTHOR_BYLINE = {
   role: "Editorial Team",
   description: "Editorial coverage of the UK IPTV provider landscape since 2023.",
   publishedDate: "2023-11-01",
-  updatedDate: "2026-07-07",
+  updatedDate: "2026-07-11",
 } as const;
 
 export const REVIEWER_BYLINE = {

@@ -1,9 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Clock, ArrowLeft, Tag } from "lucide-react";
+import { Clock, ArrowLeft, Tag, UserRound, CalendarCheck2 } from "lucide-react";
 import Link from "next/link";
 import SectionLink from "@/components/SectionLink";
+import { AUTHOR_BYLINE } from "@/lib/constants";
 
 interface BlogPostContentProps {
   post: {
@@ -64,9 +65,31 @@ export default function BlogPostContent({ post, content }: BlogPostContentProps)
               {post.title}
             </h1>
 
-            <p className="text-lg text-muted leading-relaxed">
+            <p className="text-lg text-muted leading-relaxed mb-6">
               {post.excerpt}
             </p>
+
+            {/* Editorial byline chip */}
+            <div className="flex flex-wrap items-center gap-3 rounded-xl border border-violet-100/70 bg-violet-50/40 px-4 py-3">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-violet-100 to-cyan-50">
+                <UserRound className="h-4 w-4 text-violet-600" aria-hidden="true" />
+              </span>
+              <div className="flex flex-col">
+                <span className="text-sm font-semibold text-foreground">
+                  {AUTHOR_BYLINE.name}
+                </span>
+                <span className="text-xs text-muted">{AUTHOR_BYLINE.role}</span>
+              </div>
+              <span className="ml-auto flex items-center gap-1.5 text-xs text-muted">
+                <CalendarCheck2 className="h-3.5 w-3.5 text-emerald-600" aria-hidden="true" />
+                Updated{" "}
+                {new Date(AUTHOR_BYLINE.updatedDate).toLocaleDateString("en-GB", {
+                  day: "numeric",
+                  month: "long",
+                  year: "numeric",
+                })}
+              </span>
+            </div>
           </motion.header>
 
           {/* Content */}

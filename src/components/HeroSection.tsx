@@ -1,10 +1,8 @@
-"use client";
-
-import { motion } from "framer-motion";
 import { Play, MessageCircle, ChevronRight } from "lucide-react";
 import ParticleBackground from "./ParticleBackground";
 import PromoBanner from "./PromoBanner";
 import SectionLink from "./SectionLink";
+import MotionFadeIn from "./MotionFadeIn";
 
 export default function HeroSection() {
   return (
@@ -63,44 +61,40 @@ export default function HeroSection() {
 
       {/* ── Content ── */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-[7.5rem] lg:pt-32 pb-2 flex flex-col items-center text-center">
-        {/* Headline — 2 lines, matches reference sizing */}
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.1 }}
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-bold tracking-tight leading-[1.1] mb-2"
-        >
+        {/* Headline — plain H1 for LCP, no motion wrapper */}
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-bold tracking-tight leading-[1.1] mb-2">
           <span className="text-white">IPTV Providers UK — </span>
           <br />
           <span className="text-white">The Guide To The #1 Rated </span>
           <span className="gradient-text-hero">IPTV Service</span>
-        </motion.h1>
+        </h1>
 
         {/* Subtitle */}
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.18 }}
+        <MotionFadeIn
+          as="p"
+          y={20}
+          duration={0.7}
+          delay={0.18}
           className="text-base sm:text-lg text-gray-300/90 max-w-3xl mb-3 px-2 sm:px-0"
         >
           Compare 37,000+ live channels, 198,000+ films and series, and 4K UHD across five simultaneous screens — with 60-second activation and a 30-day money-back on every plan. UK-focused infrastructure and 24/7 support built for British households.
-        </motion.p>
+        </MotionFadeIn>
 
         {/* Promo banner — replaces hero device image */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.25 }}
+        <MotionFadeIn
+          y={30}
+          duration={0.7}
+          delay={0.25}
           className="relative w-full mt-6 sm:mt-8"
         >
           <PromoBanner />
-        </motion.div>
+        </MotionFadeIn>
 
         {/* CTA Buttons — directly under image */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.35 }}
+        <MotionFadeIn
+          y={30}
+          duration={0.7}
+          delay={0.35}
           className="mt-10 sm:mt-12 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4"
         >
           <SectionLink
@@ -119,7 +113,7 @@ export default function HeroSection() {
             <MessageCircle className="h-5 w-5 text-cyan-400" />
             <span>Compare All Plans</span>
           </SectionLink>
-        </motion.div>
+        </MotionFadeIn>
       </div>
 
 
