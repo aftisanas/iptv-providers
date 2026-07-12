@@ -7,6 +7,7 @@
 - [About](https://iptv-providers-uk.com/about): publisher and editorial team
 - [Editorial policy](https://iptv-providers-uk.com/editorial-policy): sourcing, review process, corrections
 - [Blog](https://iptv-providers-uk.com/blog): buyer guides
+- [Setup guides](https://iptv-providers-uk.com/tutorials): 11 device tutorials — Fire Stick, Samsung and LG Smart TV, Apple TV, Android, iPhone, Windows, Mac, Formuler, BuzzTV
 - [Pricing](https://iptv-providers-uk.com/#pricing): current plans
 - [Contact](https://iptv-providers-uk.com/contact): support and enquiries
 
