@@ -27,11 +27,6 @@ export interface SubPageFAQItem {
   readonly answer: string;
 }
 
-export interface SubPageReviewer {
-  readonly name: string;
-  readonly role: string;
-}
-
 export interface SubPageCitation {
   readonly name: string;
   readonly url: string;
@@ -47,7 +42,6 @@ export interface SubPageShellProps {
   readonly category: string;
   readonly intro: string;
   readonly byline: SubPageByline;
-  readonly reviewer?: SubPageReviewer;
   readonly citations?: ReadonlyArray<SubPageCitation>;
   readonly aboutEntities?: ReadonlyArray<SubPageEntity>;
   readonly readTime?: string;
@@ -71,7 +65,6 @@ export default function SubPageShell({
   category,
   intro,
   byline,
-  reviewer,
   citations,
   aboutEntities,
   readTime,
@@ -102,12 +95,6 @@ export default function SubPageShell({
       name: byline.name,
       description: byline.description,
     },
-    ...(reviewer && {
-      reviewedBy: {
-        "@type": "Organization",
-        name: reviewer.name,
-      },
-    }),
     ...(citations && citations.length > 0 && {
       citation: citations.map((c) => ({
         "@type": "CreativeWork",
@@ -288,12 +275,6 @@ export default function SubPageShell({
               <span className="text-gray-200 font-medium">{byline.name}</span>
               <span className="text-gray-500">— {byline.role}</span>
             </span>
-            {reviewer && (
-              <span className="inline-flex items-center gap-1.5 text-gray-300">
-                <span aria-hidden="true" className="h-1 w-1 rounded-full bg-green-500/70" />
-                <span className="font-medium text-gray-200">Reviewed by {reviewer.name}</span>
-              </span>
-            )}
             <span className="inline-flex items-center gap-1.5">
               <span aria-hidden="true" className="h-1 w-1 rounded-full bg-gray-500" />
               <span>Updated {formatDate(resolvedUpdatedDate)}</span>

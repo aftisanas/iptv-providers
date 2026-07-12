@@ -188,57 +188,6 @@ export const PRICING_PLANS = [
   },
 ] as const;
 
-export const TESTIMONIALS = [
-  {
-    name: "Nathan C.",
-    location: "Bristol",
-    text: "Tested four different IPTV providers before landing here. None could hold a 4K stream during a match. This one has not buffered once in three months of weekend football viewing.",
-    rating: 5,
-    avatar: "NC",
-    since: "September 2025",
-  },
-  {
-    name: "Rebecca T.",
-    location: "Leeds",
-    text: "The support team resolved a Firestick issue in under five minutes at 11pm on a Sunday. Try getting that from any other provider. I recommended this to my entire street.",
-    rating: 5,
-    avatar: "RT",
-    since: "January 2026",
-  },
-  {
-    name: "Aaron P.",
-    location: "Birmingham",
-    text: "Cheap does not begin to describe the value. Five screens and 4K — and it still costs less than my old traditional sports bundle alone. No brainer for any household.",
-    rating: 5,
-    avatar: "AP",
-    since: "February 2026",
-  },
-  {
-    name: "Megan H.",
-    location: "Brighton",
-    text: "The channel list is absurd. 37,000 feeds including every regional terrestrial variant. I cannot find a single broadcaster missing. The best IPTV service I have used by a distance.",
-    rating: 5,
-    avatar: "MH",
-    since: "November 2025",
-  },
-  {
-    name: "David W.",
-    location: "Newcastle",
-    text: "Activation was instant. Paid, checked email and had the whole thing running on the TV within two minutes. The speed alone puts this ahead of every IPTV provider I have tried.",
-    rating: 5,
-    avatar: "DW",
-    since: "December 2025",
-  },
-  {
-    name: "Amira J.",
-    location: "Coventry",
-    text: "I needed Arabic and Urdu channels alongside the British lineup. Most providers charge extra or miss half the feeds. Here it all comes in one subscription — no add-ons.",
-    rating: 5,
-    avatar: "AJ",
-    since: "March 2026",
-  },
-] as const;
-
 export const DEVICES = [
   { name: "Amazon Fire Stick", icon: "Flame" as const },
   { name: "Smart TV", icon: "Tv" as const },
@@ -292,7 +241,7 @@ export const FAQ_ITEMS = [
   {
     question: "How can IPTV reviews be verified as genuine?",
     answer:
-      "Look for verified reviews on Trustpilot or Reddit where purchases are confirmed. Avoid providers that only show testimonials on their own site, use stock-photo avatars, or publish ratings without a link to the underlying review platform.",
+      "Look for verified reviews on Trustpilot or Reddit where purchases are confirmed. Avoid providers that only show unverified customer quotes on their own site, use stock-photo avatars, or publish ratings without a link to the underlying review platform.",
   },
   {
     question: "What internet speed is needed for IPTV UK?",
@@ -399,10 +348,4 @@ export const AUTHOR_BYLINE = {
   description: "Editorial coverage of the UK IPTV provider landscape since 2023.",
   publishedDate: "2023-11-01",
   updatedDate: "2026-07-11",
-} as const;
-
-export const REVIEWER_BYLINE = {
-  name: "Editorial Review Team",
-  role: "Compliance & Standards",
-  description: "Independent compliance and standards review.",
 } as const;

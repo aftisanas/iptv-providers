@@ -155,13 +155,6 @@ export default function EditorialPolicyPage() {
       </p>
       <ul>
         <li>
-          <strong>Fabricated testimonials or reviews.</strong> Named quotes
-          purporting to come from customers are not published unless the
-          customer has consented to the specific wording. The site previously
-          shipped fabricated testimonials during a marketing-driven phase; those
-          were removed in a compliance scrub and will not return.
-        </li>
-        <li>
           <strong>Unverifiable performance claims.</strong> Uptime figures,
           subscriber counts and speed benchmarks are only published when the
           underlying evidence is either linked or reproducible by the reader.

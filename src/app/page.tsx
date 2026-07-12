@@ -4,11 +4,11 @@ import FeaturesSection from "@/components/FeaturesSection";
 import PricingSection from "@/components/PricingSection";
 import DevicesSection from "@/components/DevicesSection";
 import ChannelsSection from "@/components/ChannelsSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
 import FAQSection from "@/components/FAQSection";
 import TrustSection from "@/components/TrustSection";
 import CTASection from "@/components/CTASection";
 import {
+  AUTHOR_BYLINE,
   CONTACT_EMAIL,
   FAQ_ITEMS,
   LOGO_PATH,
@@ -65,6 +65,7 @@ export default function HomePage() {
         about: { "@id": organizationId },
         description:
           "Trusted IPTV providers UK 2026. 37,000 channels, 4K UHD, five simultaneous screens and 24/7 UK support — from £4.99/month with a 30-day refund.",
+        dateModified: AUTHOR_BYLINE.updatedDate,
         mainEntity: [{ "@id": productId }, { "@id": faqId }],
       },
       {
@@ -109,7 +110,6 @@ export default function HomePage() {
       <PricingSection />
       <DevicesSection />
       <ChannelsSection />
-      <TestimonialsSection />
       <FAQSection />
       <TrustSection />
       <CTASection />

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { BLOG_POSTS, LOGO_PATH, SITE_URL, SITE_NAME } from "@/lib/constants";
+import { BLOG_POSTS, SITE_URL } from "@/lib/constants";
 import BlogPostContent from "./BlogPostContent";
 
 const blogContent: Record<string, { content: string[] }> = {
@@ -71,26 +71,52 @@ export default async function BlogPostPage({ params }: { params: Promise<PagePar
     notFound();
   }
 
-  const articleLd = {
+  const canonicalUrl = `${SITE_URL}/blog/${post.slug}`;
+  const organizationId = `${SITE_URL}/#organization`;
+
+  const blogGraph = {
     "@context": "https://schema.org",
-    "@type": "Article",
-    headline: post.title,
-    description: post.excerpt,
-    datePublished: post.date,
-    dateModified: post.date,
-    author: { "@type": "Organization", name: SITE_NAME },
-    publisher: {
-      "@type": "Organization",
-      name: SITE_NAME,
-      logo: {
-        "@type": "ImageObject",
-        url: `${SITE_URL}${LOGO_PATH}`,
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "@id": `${canonicalUrl}#blogposting`,
+        headline: post.title,
+        description: post.excerpt,
+        datePublished: post.date,
+        dateModified: post.date,
+        inLanguage: "en-GB",
+        author: { "@id": organizationId },
+        publisher: { "@id": organizationId },
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": canonicalUrl,
+        },
       },
-    },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": `${SITE_URL}/blog/${post.slug}`,
-    },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${canonicalUrl}#breadcrumb`,
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: `${SITE_URL}/`,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Blog",
+            item: `${SITE_URL}/blog`,
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: post.title,
+            item: canonicalUrl,
+          },
+        ],
+      },
+    ],
   };
 
   return (
@@ -98,7 +124,7 @@ export default async function BlogPostPage({ params }: { params: Promise<PagePar
       <BlogPostContent post={post} content={content.content} />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogGraph) }}
       />
     </>
   );
