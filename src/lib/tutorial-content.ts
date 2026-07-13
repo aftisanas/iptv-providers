@@ -85,6 +85,7 @@ export const TUTORIAL_DEVICES: TutorialDevice[] = [
     compatibility:
       "Tizen 4.0+ Samsung Smart TVs (2018 model year onward) are the target: X-OTT installs directly from the Samsung App Store. Q-series QLEDs (Q60R, Q80T, Q90R and newer), Crystal UHD, The Frame, and Neo QLED all work. For 2017 and older Samsung Smart TVs on Tizen 3.0, the X-OTT app isn't available — install IBO Player from the app store instead and use the same MAC-address flow. Samsung TVs older than 2016 aren't recommended for IPTV; the chipset struggles with modern HEVC codecs used by 4K streams. Hisense Smart TVs running VIDAA OS follow this exact same install path — search X-OTT in your Hisense app store and follow the WhatsApp activation flow below.",
     primaryApp: "X-OTT (Samsung App Store)",
+    appImage: "/iptv-providers-uk-xott.webp",
     fallbackApps: "IBO Player",
     steps: [
       { text: "Open the Samsung TV App Store → search X-OTT → install → open." },
@@ -117,6 +118,7 @@ export const TUTORIAL_DEVICES: TutorialDevice[] = [
     compatibility:
       "webOS 4.0+ LG Smart TVs (2018 model year onward) support X-OTT natively from the LG Content Store. OLED C8/C9/CX/C1/C2/C3/C4, G-series, B-series; NanoCell NANO90, NANO91, NANO95; QNED all work reliably. Older LG Smart TVs on webOS 3.0 or below (2016-2017) don't get X-OTT — install IBO Player from the LG Content Store instead, note the MAC Address and Device Key, and follow the same WhatsApp registration flow. LG plasma TVs and models older than 2016 aren't recommended. Other generic Smart TVs (older Hisense pre-VIDAA, Panasonic Firefox OS, Philips Saphi) follow the same install pattern with either X-OTT or IBO Player.",
     primaryApp: "X-OTT (LG Content Store)",
+    appImage: "/iptv-providers-uk-xott.webp",
     fallbackApps: "IBO Player",
     steps: [
       { text: "From your LG home, open the LG Content Store → search X-OTT → install → open." },

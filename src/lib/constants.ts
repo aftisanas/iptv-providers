@@ -3,6 +3,19 @@ export const SITE_URL = "https://iptv-providers-uk.com";
 export const LOGO_PATH = "/iptv-providers-uk.webp";
 export const CONTACT_EMAIL = "contact@buy-iptv-uk.com";
 
+export const EXTRA_CONNECTION_PRICE = 7.25;
+export const EXTRA_CONNECTIONS_MAX = 4;
+
+export const CHECKOUT_COPY = {
+  extraConnectionsLabel: "Extra Connections",
+  extraConnectionsHelp:
+    "Add additional simultaneous streams beyond the 5 included with every plan.",
+  extraConnectionsPriceLabel: "+ £7.25 per extra connection",
+  buttonLabelPrefix: "Confirm Order On WhatsApp",
+  buttonSubtitle: "Opens WhatsApp · UK support replies during peak hours",
+  footerNote: "Order details sent privately via WhatsApp",
+} as const;
+
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "Why Us", href: "/#features" },
@@ -104,6 +117,7 @@ export const PRICING_PLANS = [
     ],
     popular: false,
     savings: null,
+    proxyPrice: 4.75,
   },
   {
     id: "silver",
@@ -131,6 +145,7 @@ export const PRICING_PLANS = [
     ],
     popular: false,
     savings: "Save 43%",
+    proxyPrice: 9.5,
   },
   {
     id: "gold",
@@ -158,6 +173,7 @@ export const PRICING_PLANS = [
     ],
     popular: true,
     savings: "Save 40%",
+    proxyPrice: 19,
   },
   {
     id: "diamond",
@@ -185,6 +201,7 @@ export const PRICING_PLANS = [
     ],
     popular: false,
     savings: "Save 55%",
+    proxyPrice: 38,
   },
 ] as const;
 
